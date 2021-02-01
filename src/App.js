@@ -12,28 +12,24 @@ import {
 } from './AppStyled';
 
 export default () => {
-    const [display, setDisplay] = useState(false);
+    let primaryColor = '#282828';
+    let secondaryColor = '#999';
 
-    useEffect(() => {
-        setTimeout(() => {
-            setDisplay(true)
-        }, 4000)
-    }, [])
   return(
       <Container>
           <Header>
 
               <HeaderLeft>
                   <Typist>
-                      <DefaultText font={'25px'} color={"#999"}>Olá,</DefaultText>
+                      <DefaultText font={'30px'} color={secondaryColor}>Olá,</DefaultText>
                       <br />
-                      <DefaultText font={'35px'} bolder={"bold"}>Meu nome é <br /> Matheus Gomes</DefaultText>
+                      <DefaultText font={'40px'} color={primaryColor} bolder={"bold"}>Meu nome é <br /> Matheus Gomes</DefaultText>
                       <br />
-                      <DefaultText font={'25px'} color={"#999"}>Bem vindo ao meu portfólio</DefaultText>
+                      <DefaultText font={'30px'} color={secondaryColor}>Bem vindo ao meu portfólio</DefaultText>
                   </Typist>
               </HeaderLeft>
 
-              <HeaderImg style={{display: display ? 'block' : 'none'}} src={Header_img} width={750} height={650}/>
+              <HeaderImg src={Header_img}/>
 
           </Header>
       </Container>
