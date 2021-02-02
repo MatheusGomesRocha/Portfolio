@@ -6,7 +6,7 @@ export const MainDiv = styled.div`
     align-items: center;
     justify-content: center;
     padding-top: 100px;
-    background-color: #ddd;
+    background-color: #eee;
 `;
 export const GridDiv = styled.div`
     display: grid;
