@@ -1,7 +1,11 @@
 import Typist from 'react-typist';
 import Header_img from './header_img.svg';
 import {DefaultText} from './components/DefaultText';
-import AboutMeComponent from "./components/AboutMeComponent";
+import {Button} from '@material-ui/core';
+
+import {
+    withStyles,
+} from '@material-ui/core/styles';
 
 import {
     Container,
@@ -11,9 +15,31 @@ import {
     HeaderImg,
 } from './AppStyled';
 
+import AboutMeComponent from "./components/AboutMeComponent";
+
 export default () => {
     let primaryColor = '#282828';
     let secondaryColor = '#999';
+
+    const DefaultBtn = withStyles(() => ({
+        root: {
+            backgroundColor: '#845EC2',
+            padding: 20,
+            fontSize: 16,
+            height: 50,
+            marginTop: 30,
+            borderRadius: 10,
+            width: '60%',
+            color: '#fff',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+
+            '&:hover': {
+                backgroundColor: '#008353',
+            }
+        },
+    }))(Button);
 
   return(
       <Container>
@@ -27,6 +53,8 @@ export default () => {
                       <br />
                       <DefaultText font={'30px'} color={secondaryColor}>Bem vindo ao meu portfólio</DefaultText>
                   </Typist>
+
+                  <DefaultBtn> Vamos Começar </DefaultBtn>
               </HeaderLeft>
 
               <HeaderImg src={Header_img}/>
