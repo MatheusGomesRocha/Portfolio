@@ -16,6 +16,7 @@ import {
 } from './AppStyled';
 
 import AboutMeComponent from "./components/AboutMeComponent";
+import BenefitsComponent from "./components/BenefitsComponent";
 
 export default () => {
     let primaryColor = '#282828';
@@ -62,6 +63,8 @@ export default () => {
           </Header>
 
           <AboutMeComponent />
+
+          <BenefitsComponent />
       </Container>
 
   );
