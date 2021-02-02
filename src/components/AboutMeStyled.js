@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const defaultBackgroundColor = '#845EC2';
+const defaultBackgroundColor = '#ddd';
 
 export const MainDiv = styled.div`
 

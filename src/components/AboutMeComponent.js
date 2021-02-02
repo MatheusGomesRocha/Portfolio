@@ -15,8 +15,7 @@ import {
 
 export default () => {
     let primaryColor = '#282828';
-    let secondaryColor = '#999';
-    let white = '#fff';
+    let secondaryColor = '#666';
 
     let array = [
         {
@@ -56,11 +55,11 @@ export default () => {
     return (
         <MainDiv>
             <TopDiv>
-                <DefaultText color={white} align={"center"} bolder={"bold"} font={"25px"}>
+                <DefaultText color={primaryColor} align={"center"} bolder={"bold"} font={"25px"}>
                     Meu nome é Matheus, e sou um desenvolvedor Full-Stack em formação
                 </DefaultText>
 
-                <DefaultText width={"75%"} font={"22px"} align={"center"} color={"#ddd"}>
+                <DefaultText width={"75%"} font={"22px"} align={"center"} color={secondaryColor}>
                     Oi, tenho 19 anos e estou na área de programação à 2 anos. Comecei quando iniciei a faculdade de
                     Análise
                     e Desenvolvimento de Sistemas, a qual estou no 5º semestre. Não tenho nenhuma experiência
