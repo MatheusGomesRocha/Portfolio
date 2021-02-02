@@ -7,18 +7,11 @@ export const Container = styled.div`
     justify-content: center;
 `;
 
-export const DefaultText = styled.span`
-    color: ${props=>props.color};
-    font-size: ${props=>props.font};
-    font-weight: ${props=>props.bolder || 'normal'};
-    font-family: courier;
-`;
-
 export const Header = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 100px;
+    padding: 0 80px;
     height: 100vh;
 `;
 export const HeaderLeft = styled.div`

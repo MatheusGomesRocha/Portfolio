@@ -1,14 +1,14 @@
-import {useState, useEffect} from 'react';
 import Typist from 'react-typist';
 import Header_img from './header_img.svg';
+import {DefaultText} from './components/DefaultText';
+import AboutMeComponent from "./components/AboutMeComponent";
 
 import {
     Container,
 
-    DefaultText,
-
-    Header, HeaderImg,
+    Header,
     HeaderLeft,
+    HeaderImg,
 } from './AppStyled';
 
 export default () => {
@@ -32,6 +32,8 @@ export default () => {
               <HeaderImg src={Header_img}/>
 
           </Header>
+
+          <AboutMeComponent />
       </Container>
 
   );
