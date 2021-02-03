@@ -1,18 +1,20 @@
 import styled from 'styled-components';
 
-const defaultBackgroundColor = '#eee';
+const defaultBackgroundColor = '#fff';
 
 export const MainDiv = styled.div`
-
+    background: linear-gradient(90deg, #ff9966 0%, #ff5e62 100%);    
+    padding-bottom: 70px;
+    position: relative;
 `;
 export const TopDiv = styled.div`
     width: 100%;
-    padding: 40px 0 350px 0;
+    padding-bottom: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: ${defaultBackgroundColor};
+    background-color: #fff;
 `;
 export const BlockDiv = styled.div`
     display: flex;
@@ -21,6 +23,7 @@ export const BlockDiv = styled.div`
     margin-bottom: 50px;
     width: 100%;
     justify-content: center;
+    
 `;
 export const ItemDiv = styled.div`
     display: flex;
@@ -32,6 +35,8 @@ export const ItemDiv = styled.div`
     width: 25%;
     border-right: 1px solid #999;
     border-left: ${props=>props.bLeft};
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
     border-top-left-radius: ${props=>props.leftTop};
     border-bottom-left-radius: ${props=>props.leftBottom};
     border-top-right-radius: ${props=>props.rightTop};

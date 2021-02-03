@@ -42,7 +42,7 @@ export default () => {
 
             <GridDiv>
                 <BlockDiv display={displayBlock ? 'flex' : 'none'} onMouseOver={() => setHover1(true)}
-                          onMouseOut={() => setHover1(false)} background={"#eee"}>
+                          onMouseOut={() => setHover1(false)} background={"#FF5E62"} color={"#fff"}>
                     <Svg transform={hover1 ? 'scale(1.2)' : 'scale(1)'} src={Smile}/>
                     {displayBlock ?
                         <AnimatedNumber
@@ -54,7 +54,7 @@ export default () => {
                         null
                     }
 
-                    <DefaultText color={"#282828"} align={"center"} bolder={"bold"} font={"25px"} mTop={"10px"}>Clientes
+                    <DefaultText color={"#fff"} align={"center"} bolder={"bold"} font={"25px"} mTop={"10px"}>Clientes
                         satisfeitos</DefaultText>
                 </BlockDiv>
 
@@ -71,12 +71,12 @@ export default () => {
                         null
                     }
 
-                    <DefaultText color={"#282828"} align={"center"} bolder={"bold"} font={"25px"} mTop={"10px"}>Copos de
+                    <DefaultText color={"#2f2e41"} align={"center"} bolder={"bold"} font={"25px"} mTop={"10px"}>Copos de
                         café</DefaultText>
                 </BlockDiv>
 
                 <BlockDiv display={displayBlock ? 'flex' : 'none'} onMouseOver={() => setHover3(true)}
-                          onMouseOut={() => setHover3(false)} background={"#eee"}>
+                          onMouseOut={() => setHover3(false)} background={"#FF5E62"} color={"#fff"}>
                     <Svg transform={hover3 ? 'scale(1.2)' : 'scale(1)'} src={Edit}/>
                     {displayBlock ?
                         <AnimatedNumber
@@ -88,7 +88,7 @@ export default () => {
                         null
                     }
 
-                    <DefaultText color={"#282828"} align={"center"} bolder={"bold"} font={"25px"} mTop={"10px"}>Linhas de
+                    <DefaultText color={"#fff"} align={"center"} bolder={"bold"} font={"25px"} mTop={"10px"}>Linhas de
                         códigos</DefaultText>
                 </BlockDiv>
 
@@ -105,39 +105,39 @@ export default () => {
                         null
                     }
 
-                    <DefaultText color={"#282828"} align={"center"} bolder={"bold"} font={"25px"} mTop={"10px"}>Projetos
+                    <DefaultText color={"#2f2e41"} align={"center"} bolder={"bold"} font={"25px"} mTop={"10px"}>Projetos
                         completados</DefaultText>
                 </BlockDiv>
             </GridDiv>
 
 
-            <DefaultText mTop={"100px"} align={"center"} font={"40px"} bolder={"bold"} color={"#282828"} >Minhas especialidades</DefaultText>
+            <DefaultText mTop={"100px"} align={"center"} font={"40px"} bolder={"bold"} color={"#2f2e41"} >Minhas especialidades</DefaultText>
             <DefaultText mTop={"0"} align={"center"} font={"25px"} color={"#999"} >Algumas de minhas habilidades</DefaultText>
 
             <GridBottomDiv>
                 <ItemCircleDiv>
                     <CircleProgressBar1 />
-                    <DefaultText mTop={"-10px"} color={"#282828"} font={"25px"} align={"center"}>Back-end</DefaultText>
+                    <DefaultText mTop={"-10px"} color={"#2f2e41"} font={"25px"} align={"center"}>Back-end</DefaultText>
                 </ItemCircleDiv>
 
                 <ItemCircleDiv>
                     <CircleProgressBar2 />
-                    <DefaultText mTop={"-10px"} color={"#282828"} font={"25px"} align={"center"}>Front-end</DefaultText>
+                    <DefaultText mTop={"-10px"} color={"#2f2e41"} font={"25px"} align={"center"}>Front-end</DefaultText>
                 </ItemCircleDiv>
 
                 <ItemCircleDiv>
                     <CircleProgressBar3 />
-                    <DefaultText mTop={"-10px"} color={"#282828"} font={"25px"} align={"center"}>Mobile</DefaultText>
+                    <DefaultText mTop={"-10px"} color={"#2f2e41"} font={"25px"} align={"center"}>Mobile</DefaultText>
                 </ItemCircleDiv>
 
                 <ItemCircleDiv>
                     <CircleProgressBar4 />
-                    <DefaultText mTop={"-10px"} color={"#282828"} font={"25px"} align={"center"}>Performance</DefaultText>
+                    <DefaultText mTop={"-10px"} color={"#2f2e41"} font={"25px"} align={"center"}>Performance</DefaultText>
                 </ItemCircleDiv>
 
                 <ItemCircleDiv>
                     <CircleProgressBar5 />
-                    <DefaultText mTop={"-10px"} color={"#282828"} font={"25px"} align={"center"}>Expriência do usuário</DefaultText>
+                    <DefaultText mTop={"-10px"} color={"#2f2e41"} font={"25px"} align={"center"}>Expriência do usuário</DefaultText>
                 </ItemCircleDiv>
             </GridBottomDiv>
 

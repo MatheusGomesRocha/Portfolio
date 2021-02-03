@@ -6,7 +6,7 @@ export const CircleProgressBar1 = styled(CircleProgressBarBase1)`
   max-width: ${props => props.maxSize};
   vertical-align: middle;
   .chart-text {
-    fill: #845EC2;
+    fill: #FF5E62;
     transform: translateY(0.25em);
   }
   .chart-number {
@@ -45,7 +45,7 @@ CircleProgressBar1.propTypes = {
 
 CircleProgressBar1.defaultProps = {
     textColor: 'black',
-    strokeColor: '#845EC2',
+    strokeColor: '#FF5E62',
     maxSize: '250px'
 };
 
@@ -53,7 +53,7 @@ export const CircleProgressBar2 = styled(CircleProgressBarBase2)`
   max-width: ${props => props.maxSize};
   vertical-align: middle;
   .chart-text {
-    fill: #845EC2;
+    fill: #FF5E62;
     transform: translateY(0.25em);
   }
   .chart-number {
@@ -92,7 +92,7 @@ CircleProgressBar2.propTypes = {
 
 CircleProgressBar2.defaultProps = {
     textColor: 'black',
-    strokeColor: '#845EC2',
+    strokeColor: '#FF5E62',
     maxSize: '250px'
 };
 
@@ -101,7 +101,7 @@ export const CircleProgressBar3 = styled(CircleProgressBarBase3)`
   max-width: ${props => props.maxSize};
   vertical-align: middle;
   .chart-text {
-    fill: #845EC2;
+    fill: #FF5E62;
     transform: translateY(0.25em);
   }
   .chart-number {
@@ -140,7 +140,7 @@ CircleProgressBar3.propTypes = {
 
 CircleProgressBar3.defaultProps = {
     textColor: 'black',
-    strokeColor: '#845EC2',
+    strokeColor: '#FF5E62',
     maxSize: '250px'
 };
 
@@ -148,7 +148,7 @@ export const CircleProgressBar4 = styled(CircleProgressBarBase4)`
   max-width: ${props => props.maxSize};
   vertical-align: middle;
   .chart-text {
-    fill: #845EC2;
+    fill: #FF5E62;
     transform: translateY(0.25em);
   }
   .chart-number {
@@ -187,7 +187,7 @@ CircleProgressBar4.propTypes = {
 
 CircleProgressBar4.defaultProps = {
     textColor: 'black',
-    strokeColor: '#845EC2',
+    strokeColor: '#FF5E62',
     maxSize: '250px'
 };
 
@@ -195,7 +195,7 @@ export const CircleProgressBar5 = styled(CircleProgressBarBase5)`
   max-width: ${props => props.maxSize};
   vertical-align: middle;
   .chart-text {
-    fill: #845EC2;
+    fill: #FF5E62;
     transform: translateY(0.25em);
   }
   .chart-number {
@@ -234,7 +234,7 @@ CircleProgressBar5.propTypes = {
 
 CircleProgressBar5.defaultProps = {
     textColor: 'black',
-    strokeColor: '#845EC2',
+    strokeColor: '#FF5E62',
     maxSize: '250px'
 };
 

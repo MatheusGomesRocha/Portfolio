@@ -5,8 +5,7 @@ export const MainDiv = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 100px;
-    background-color: #eee;
+    padding-top: 50px;
 `;
 export const GridDiv = styled.div`
     display: grid;
@@ -24,7 +23,7 @@ export const RowDiv = styled.div`
 export const SvgDiv = styled.div`
     width: 65px;
     height: 50px;
-    background-color: #282828;
+    background-color: #2f2e41;
     display: flex;
     align-items: center;
     justify-content: center;

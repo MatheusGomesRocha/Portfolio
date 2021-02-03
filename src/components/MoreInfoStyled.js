@@ -3,7 +3,9 @@ import styled from 'styled-components';
 export const MainDiv = styled.div`
     display: flex;
     flex-direction: column;
+    padding-top: 100px;
     margin-bottom: 500px;
+    background-color: #fff;
 `;
 export const GridDiv = styled.div`
     display: grid;
@@ -19,10 +21,13 @@ export const BlockDiv = styled.div`
     justify-content: center;
     font-size: 40px;
     font-weight: bold;
-    color: #845EC2;
+    color: ${props=>props.color || '#FF5E62'};
     animation: fade 1s;
     height: 270px;
-    
+    border-right: 1px solid #999;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+
     @keyframes fade {
         from{opacity: 0; transform: translateY(-40%);}
         to{opacity:1}
@@ -42,7 +47,7 @@ export const GridBottomDiv = styled.div`
     grid-template-columns: 20% 20% 20% 20% 20%;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 5z0px;
 `;
 export const ItemCircleDiv = styled.div`
     display: flex;

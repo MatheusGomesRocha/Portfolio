@@ -14,7 +14,7 @@ import {
 } from './AboutMeStyled';
 
 export default () => {
-    let primaryColor = '#282828';
+    let primaryColor = '#2f2e41';
     let secondaryColor = '#666';
 
     let array = [
@@ -55,7 +55,7 @@ export default () => {
     return (
         <MainDiv>
             <TopDiv>
-                <DefaultText color={primaryColor} align={"center"} bolder={"bold"} font={"25px"}>
+                <DefaultText mTop={"30px"} color={'#2f2e41'} align={"center"} bolder={"bold"} font={"25px"}>
                     Meu nome é Matheus, e sou um desenvolvedor Full-Stack em formação
                 </DefaultText>
 
@@ -80,7 +80,7 @@ export default () => {
                         </BlockTopDiv>
 
                         <BlockBottomDiv>
-                            <DefaultText font={"18px"} align={"center"} color={"#845EC2"} bolder={"bold"}>
+                            <DefaultText font={"18px"} align={"center"} color={"#FF5E62"} bolder={"bold"}>
                                 {item.subtitle}
                             </DefaultText>
 
