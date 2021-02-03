@@ -16,7 +16,7 @@ import {
 
 export default () => {
     return (
-        <MainDiv class={"container"}>
+        <MainDiv>
             <DefaultText align={"center"} color={"#282828"} font={"40px"} bolder={"bold"}>Benefícios de trabalhar comigo</DefaultText>
             <GridDiv>
                 <div className={"item1"}>

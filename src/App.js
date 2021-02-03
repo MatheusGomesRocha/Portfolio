@@ -17,6 +17,7 @@ import {
 
 import AboutMeComponent from "./components/AboutMeComponent";
 import BenefitsComponent from "./components/BenefitsComponent";
+import MoreInfoComponent from "./components/MoreInfoComponent";
 
 export default () => {
     let primaryColor = '#282828';
@@ -65,6 +66,8 @@ export default () => {
           <AboutMeComponent />
 
           <BenefitsComponent />
+
+          <MoreInfoComponent />
       </Container>
 
   );
