@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd8618c2-40d8-4a00-bbc3-a9d29c113ef8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/CircleProgressBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CircleProgressBarBase.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MoreInfoComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoreInfoComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MoreInfoStyled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoreInfoStyled.js" afterDir="false" />
     </list>
@@ -74,6 +74,7 @@
       <workItem from="1612294118631" duration="380000" />
       <workItem from="1612307926267" duration="2639000" />
       <workItem from="1612349653615" duration="1685000" />
+      <workItem from="1612359758503" duration="7554000" />
     </task>
     <servers />
   </component>
@@ -104,6 +105,18 @@
           <url>file://$PROJECT_DIR$/src/components/AboutMeStyled.js</url>
           <line>51</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/CircleProgressBarBase.js</url>
+          <line>265</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/CircleProgressBarBase.js</url>
+          <line>346</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
