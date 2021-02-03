@@ -1,5 +1,5 @@
 import {DefaultText} from "./DefaultText";
-import AnimatedNumber from "react-animated-number";
+import AnimatedNumber from "animated-number-react";
 import Smile from '../svg/smile.svg';
 import Clock from '../svg/clock.svg';
 import Edit from '../svg/edit.svg';
@@ -10,7 +10,7 @@ import {
     BlockDiv,
     Svg
 } from "./MoreInfoStyled";
-import {useState} from "react";
+import {useState, useEffect} from "react";
 
 export default () => {
     const [hover1, setHover1] = useState(false);
@@ -18,63 +18,89 @@ export default () => {
     const [hover3, setHover3] = useState(false);
     const [hover4, setHover4] = useState(false);
 
+    const [displayBlock, setDisplayBlock] = useState(false);
+
+    const handleScroll = () => {        // Verifica se o scroll é maior que 80 e mostra o Header fixado
+        if (document.documentElement.scrollTop > 2500) {
+            setDisplayBlock(true);
+        }
+    }
+
+    useEffect(() => {       // Ao carregar a página já executa as 2 funções para pegar o valor do scroll
+        window.onscroll = () => {
+            handleScroll();
+        };
+    }, [])
+
     return (
         <MainDiv>
 
-            <BlockDiv onMouseOver={() => setHover1(true)} onMouseOut={() => setHover1(false)} background={"#eee"}>
+            <BlockDiv display={displayBlock ? 'flex' : 'none'} onMouseOver={() => setHover1(true)}
+                      onMouseOut={() => setHover1(false)} background={"#eee"}>
                 <Svg transform={hover1 ? 'scale(1.2)' : 'scale(1)'} src={Smile}/>
-                <AnimatedNumber component="text" value={18}
-                                style={{
-                                    fontSize: 48,
-                                    color: '#845EC2',
-                                    marginTop: 10
-                                }}
-                                formatValue={n => n.toFixed(0)}
-                                duration={3000}
-                />
-                <DefaultText align={"center"} bolder={"bold"} font={"25px"} mTop={"10px"}>Clientes satisfeitos</DefaultText>
+                {displayBlock ?
+                    <AnimatedNumber
+                        value={19}
+                        formatValue={n => n.toFixed(0)}
+                        duration={3000}
+                    />
+                    :
+                    null
+                }
+
+                <DefaultText color={"#282828"} align={"center"} bolder={"bold"} font={"25px"} mTop={"10px"}>Clientes
+                    satisfeitos</DefaultText>
             </BlockDiv>
 
-            <BlockDiv onMouseOver={() => setHover2(true)} onMouseOut={() => setHover2(false)}>
+            <BlockDiv display={displayBlock ? 'flex' : 'none'} onMouseOver={() => setHover2(true)}
+                      onMouseOut={() => setHover2(false)}>
                 <Svg transform={hover2 ? 'scale(1.2)' : 'scale(1)'} src={Coffee}/>
-                <AnimatedNumber component="text" value={1478}
-                                style={{
-                                    fontSize: 48,
-                                    color: '#845EC2',
-                                    marginTop: 10
-                                }}
-                                formatValue={n => n.toFixed(0)}
-                                duration={3000}
-                />
-                <DefaultText align={"center"} bolder={"bold"} font={"25px"} mTop={"10px"}>Copos de café</DefaultText>
+                {displayBlock ?
+                    <AnimatedNumber
+                        value={2147}
+                        formatValue={n => n.toFixed(0)}
+                        duration={3000}
+                    />
+                    :
+                    null
+                }
+
+                <DefaultText color={"#282828"} align={"center"} bolder={"bold"} font={"25px"} mTop={"10px"}>Copos de
+                    café</DefaultText>
             </BlockDiv>
 
-            <BlockDiv onMouseOver={() => setHover3(true)} onMouseOut={() => setHover3(false)} background={"#eee"}>
+            <BlockDiv display={displayBlock ? 'flex' : 'none'} onMouseOver={() => setHover3(true)}
+                      onMouseOut={() => setHover3(false)} background={"#eee"}>
                 <Svg transform={hover3 ? 'scale(1.2)' : 'scale(1)'} src={Edit}/>
-                <AnimatedNumber component="text" value={1871}
-                                style={{
-                                    fontSize: 48,
-                                    color: '#845EC2',
-                                    marginTop: 10
-                                }}
-                                formatValue={n => n.toFixed(0)}
-                                duration={3000}
-                />
-                <DefaultText align={"center"} bolder={"bold"} font={"25px"} mTop={"10px"}>Linhas de códigos</DefaultText>
+                {displayBlock ?
+                    <AnimatedNumber
+                        value={3485}
+                        formatValue={n => n.toFixed(0)}
+                        duration={3000}
+                    />
+                    :
+                    null
+                }
+
+                <DefaultText color={"#282828"} align={"center"} bolder={"bold"} font={"25px"} mTop={"10px"}>Linhas de
+                    códigos</DefaultText>
             </BlockDiv>
 
-            <BlockDiv onMouseOver={() => setHover4(true)} onMouseOut={() => setHover4(false)}>
+            <BlockDiv display={displayBlock ? 'flex' : 'none'} onMouseOver={() => setHover4(true)}
+                      onMouseOut={() => setHover4(false)}>
                 <Svg transform={hover4 ? 'scale(1.2)' : 'scale(1)'} src={Clock}/>
-                <AnimatedNumber component="text" value={5}
-                                style={{
-                                    fontSize: 48,
-                                    color: '#845EC2',
-                                    marginTop: 10
-                                }}
-                                formatValue={n => n.toFixed(0)}
-                                duration={3000}
-                />
-                <DefaultText align={"center"} bolder={"bold"} font={"25px"} mTop={"10px"}>Projetos completados</DefaultText>
+                {displayBlock ?
+                    <AnimatedNumber
+                        value={8}
+                        formatValue={n => n.toFixed(0)}
+                        duration={3000}
+                    />
+                    :
+                    null
+                }
+
+                <DefaultText color={"#282828"} align={"center"} bolder={"bold"} font={"25px"} mTop={"10px"}>Projetos
+                    completados</DefaultText>
             </BlockDiv>
         </MainDiv>
     )
