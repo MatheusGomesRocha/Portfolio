@@ -18,6 +18,7 @@ import {
 import AboutMeComponent from "./components/AboutMeComponent";
 import BenefitsComponent from "./components/BenefitsComponent";
 import MoreInfoComponent from "./components/MoreInfoComponent";
+import WorksComponent from "./components/WorksComponent";
 
 import './App.css'
 
@@ -80,6 +81,8 @@ export default () => {
           <BenefitsComponent />
 
           <MoreInfoComponent />
+
+          <WorksComponent />
       </Container>
 
   );
