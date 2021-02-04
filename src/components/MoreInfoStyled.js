@@ -3,16 +3,30 @@ import styled from 'styled-components';
 export const MainDiv = styled.div`
     display: flex;
     flex-direction: column;
-    padding-top: 100px;
+    padding-top: 50px;
     margin-bottom: 500px;
     background-color: #fff;
 `;
+export const GridTopDiv = styled.div`
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    align-items: center;
+    justify-content: center;
+`;
+export const ItemCircleDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    height: 200px;
+`;
+
+
 export const GridDiv = styled.div`
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     height: 270px;
+    margin-top: 250px;
 `;
-
 export const BlockDiv = styled.div`
     background-color: ${props=>props.background};
     display: ${props=>props.display};
@@ -42,16 +56,3 @@ export const Svg = styled.img`
     transform: ${props=>props.transform};
 `;
 
-export const GridBottomDiv = styled.div`
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5z0px;
-`;
-export const ItemCircleDiv = styled.div`
-    display: flex;
-    flex-direction: column;
-    padding: 20px 0;
-    height: 200px;
-`;

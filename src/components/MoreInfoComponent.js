@@ -9,7 +9,7 @@ import {CircleProgressBar1, CircleProgressBar2, CircleProgressBar3, CircleProgre
 
 import {
     MainDiv,
-    GridBottomDiv,
+    GridTopDiv,
     ItemCircleDiv,
     GridDiv,
     BlockDiv,
@@ -25,7 +25,7 @@ export default () => {
     const [displayBlock, setDisplayBlock] = useState(false);
 
     const handleScroll = () => {        // Verifica se o scroll é maior que 1900 e mostra uma área
-        if (document.documentElement.scrollTop > 1900) {
+        if (document.documentElement.scrollTop > 2500) {
             setDisplayBlock(true);
         }
     }
@@ -39,6 +39,35 @@ export default () => {
     return (
         <MainDiv>
 
+            <DefaultText align={"center"} font={"40px"} bolder={"bold"} color={"#2f2e41"} >Minhas especialidades</DefaultText>
+            <DefaultText mTop={"0"} align={"center"} font={"25px"} color={"#999"} >Algumas de minhas habilidades</DefaultText>
+
+            <GridTopDiv>
+                <ItemCircleDiv>
+                    <CircleProgressBar1 />
+                    <DefaultText mTop={"-10px"} color={"#2f2e41"} font={"25px"} align={"center"}>Back-end</DefaultText>
+                </ItemCircleDiv>
+
+                <ItemCircleDiv>
+                    <CircleProgressBar2 />
+                    <DefaultText mTop={"-10px"} color={"#2f2e41"} font={"25px"} align={"center"}>Front-end</DefaultText>
+                </ItemCircleDiv>
+
+                <ItemCircleDiv>
+                    <CircleProgressBar3 />
+                    <DefaultText mTop={"-10px"} color={"#2f2e41"} font={"25px"} align={"center"}>Mobile</DefaultText>
+                </ItemCircleDiv>
+
+                <ItemCircleDiv>
+                    <CircleProgressBar4 />
+                    <DefaultText mTop={"-10px"} color={"#2f2e41"} font={"25px"} align={"center"}>Performance</DefaultText>
+                </ItemCircleDiv>
+
+                <ItemCircleDiv>
+                    <CircleProgressBar5 />
+                    <DefaultText mTop={"-10px"} color={"#2f2e41"} font={"25px"} align={"center"}>Expriência do usuário</DefaultText>
+                </ItemCircleDiv>
+            </GridTopDiv>
 
             <GridDiv>
                 <BlockDiv display={displayBlock ? 'flex' : 'none'} onMouseOver={() => setHover1(true)}
@@ -110,36 +139,6 @@ export default () => {
                 </BlockDiv>
             </GridDiv>
 
-
-            <DefaultText mTop={"100px"} align={"center"} font={"40px"} bolder={"bold"} color={"#2f2e41"} >Minhas especialidades</DefaultText>
-            <DefaultText mTop={"0"} align={"center"} font={"25px"} color={"#999"} >Algumas de minhas habilidades</DefaultText>
-
-            <GridBottomDiv>
-                <ItemCircleDiv>
-                    <CircleProgressBar1 />
-                    <DefaultText mTop={"-10px"} color={"#2f2e41"} font={"25px"} align={"center"}>Back-end</DefaultText>
-                </ItemCircleDiv>
-
-                <ItemCircleDiv>
-                    <CircleProgressBar2 />
-                    <DefaultText mTop={"-10px"} color={"#2f2e41"} font={"25px"} align={"center"}>Front-end</DefaultText>
-                </ItemCircleDiv>
-
-                <ItemCircleDiv>
-                    <CircleProgressBar3 />
-                    <DefaultText mTop={"-10px"} color={"#2f2e41"} font={"25px"} align={"center"}>Mobile</DefaultText>
-                </ItemCircleDiv>
-
-                <ItemCircleDiv>
-                    <CircleProgressBar4 />
-                    <DefaultText mTop={"-10px"} color={"#2f2e41"} font={"25px"} align={"center"}>Performance</DefaultText>
-                </ItemCircleDiv>
-
-                <ItemCircleDiv>
-                    <CircleProgressBar5 />
-                    <DefaultText mTop={"-10px"} color={"#2f2e41"} font={"25px"} align={"center"}>Expriência do usuário</DefaultText>
-                </ItemCircleDiv>
-            </GridBottomDiv>
 
         </MainDiv>
     )

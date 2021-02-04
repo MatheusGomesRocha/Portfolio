@@ -504,7 +504,7 @@ CircleProgressBarBase1.defaultProps = {
     trailStrokeWidth: 3,
     trailStrokeColor: '#d2d3d4',
     trailSpaced: false,
-    speed: 10
+    speed: 5
 };
 CircleProgressBarBase2.defaultProps = {
     strokeColor: 'blueviolet',
@@ -514,7 +514,7 @@ CircleProgressBarBase2.defaultProps = {
     trailStrokeWidth: 3,
     trailStrokeColor: '#d2d3d4',
     trailSpaced: false,
-    speed: 10
+    speed: 5
 };
 CircleProgressBarBase3.defaultProps = {
     strokeColor: 'blueviolet',
@@ -524,7 +524,7 @@ CircleProgressBarBase3.defaultProps = {
     trailStrokeWidth: 3,
     trailStrokeColor: '#d2d3d4',
     trailSpaced: false,
-    speed: 10
+    speed: 5
 };
 CircleProgressBarBase4.defaultProps = {
     strokeColor: 'blueviolet',
@@ -534,7 +534,7 @@ CircleProgressBarBase4.defaultProps = {
     trailStrokeWidth: 3,
     trailStrokeColor: '#d2d3d4',
     trailSpaced: false,
-    speed: 10
+    speed: 5
 };
 CircleProgressBarBase5.defaultProps = {
     strokeColor: 'blueviolet',
@@ -544,7 +544,7 @@ CircleProgressBarBase5.defaultProps = {
     trailStrokeWidth: 3,
     trailStrokeColor: '#d2d3d4',
     trailSpaced: false,
-    speed: 10
+    speed: 5
 };
 
 
