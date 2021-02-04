@@ -10,7 +10,7 @@ import {
 
 export default () => {
     let primaryColor = '#2f2e41';
-    let secondaryColor = '#ddd';
+    let secondaryColor = '#999';
 
     return (
         <MainDiv>

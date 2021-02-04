@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd8618c2-40d8-4a00-bbc3-a9d29c113ef8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/WorksComponent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/WorksStyled.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/project1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MoreInfoStyled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoreInfoStyled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Benefits.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Benefits.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BenefitsComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BenefitsComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BenefitsStyled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BenefitsStyled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MoreInfoComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoreInfoComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WorksComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WorksComponent.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +79,9 @@
       <workItem from="1612349653615" duration="1685000" />
       <workItem from="1612359758503" duration="7554000" />
       <workItem from="1612377671386" duration="4179000" />
-      <workItem from="1612441100762" duration="2639000" />
+      <workItem from="1612441100762" duration="2919000" />
+      <workItem from="1612464684431" duration="3313000" />
+      <workItem from="1612468058967" duration="57000" />
     </task>
     <servers />
   </component>

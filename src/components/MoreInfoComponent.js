@@ -16,25 +16,11 @@ import {
     Svg
 } from "./MoreInfoStyled";
 
-export default () => {
+export default (props) => {
     const [hover1, setHover1] = useState(false);
     const [hover2, setHover2] = useState(false);
     const [hover3, setHover3] = useState(false);
     const [hover4, setHover4] = useState(false);
-
-    const [displayBlock, setDisplayBlock] = useState(false);
-
-    const handleScroll = () => {        // Verifica se o scroll é maior que 1900 e mostra uma área
-        if (document.documentElement.scrollTop > 2500) {
-            setDisplayBlock(true);
-        }
-    }
-
-    useEffect(() => {       // Ao carregar a página já executa a função para pegar o valor do scroll
-        window.onscroll = () => {
-            handleScroll();
-        };
-    }, [])
 
     return (
         <MainDiv>
@@ -70,10 +56,10 @@ export default () => {
             </GridTopDiv>
 
             <GridDiv>
-                <BlockDiv display={displayBlock ? 'flex' : 'none'} onMouseOver={() => setHover1(true)}
+                <BlockDiv display={props.showMoreInfo ? 'flex' : 'none'} onMouseOver={() => setHover1(true)}
                           onMouseOut={() => setHover1(false)} background={"#FF5E62"} color={"#fff"}>
                     <Svg transform={hover1 ? 'scale(1.2)' : 'scale(1)'} src={Smile}/>
-                    {displayBlock ?
+                    {props.showMoreInfo ?
                         <AnimatedNumber
                             value={19}
                             formatValue={n => n.toFixed(0)}
@@ -87,10 +73,10 @@ export default () => {
                         satisfeitos</DefaultText>
                 </BlockDiv>
 
-                <BlockDiv display={displayBlock ? 'flex' : 'none'} onMouseOver={() => setHover2(true)}
+                <BlockDiv display={props.showMoreInfo ? 'flex' : 'none'} onMouseOver={() => setHover2(true)}
                           onMouseOut={() => setHover2(false)}>
                     <Svg transform={hover2 ? 'scale(1.2)' : 'scale(1)'} src={Coffee}/>
-                    {displayBlock ?
+                    {props.showMoreInfo ?
                         <AnimatedNumber
                             value={2147}
                             formatValue={n => n.toFixed(0)}
@@ -104,10 +90,10 @@ export default () => {
                         café</DefaultText>
                 </BlockDiv>
 
-                <BlockDiv display={displayBlock ? 'flex' : 'none'} onMouseOver={() => setHover3(true)}
+                <BlockDiv display={props.showMoreInfo ? 'flex' : 'none'} onMouseOver={() => setHover3(true)}
                           onMouseOut={() => setHover3(false)} background={"#FF5E62"} color={"#fff"}>
                     <Svg transform={hover3 ? 'scale(1.2)' : 'scale(1)'} src={Edit}/>
-                    {displayBlock ?
+                    {props.showMoreInfo ?
                         <AnimatedNumber
                             value={3485}
                             formatValue={n => n.toFixed(0)}
@@ -121,10 +107,10 @@ export default () => {
                         códigos</DefaultText>
                 </BlockDiv>
 
-                <BlockDiv display={displayBlock ? 'flex' : 'none'} onMouseOver={() => setHover4(true)}
+                <BlockDiv display={props.showMoreInfo ? 'flex' : 'none'} onMouseOver={() => setHover4(true)}
                           onMouseOut={() => setHover4(false)}>
                     <Svg transform={hover4 ? 'scale(1.2)' : 'scale(1)'} src={Clock}/>
-                    {displayBlock ?
+                    {props.showMoreInfo ?
                         <AnimatedNumber
                             value={8}
                             formatValue={n => n.toFixed(0)}

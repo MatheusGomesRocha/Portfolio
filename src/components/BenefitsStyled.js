@@ -6,6 +6,7 @@ export const MainDiv = styled.div`
     align-items: center;
     justify-content: center;
     padding-top: 50px;
+    height: 751px;
 `;
 export const GridDiv = styled.div`
     display: grid;
@@ -14,6 +15,20 @@ export const GridDiv = styled.div`
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     padding: 40px 120px;
+`;
+export const ItemDiv = styled.div`
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 10px;
+    display: ${props=>props.display};
+    flex-direction: column;
+    animation: fadeTop 1s;
+    padding: 20px;
+
+    @keyframes fadeTop {
+        from{opacity: 0; transform: translateY(40%)}
+        to {opacity: 1;}
+    }
 `;
 export const RowDiv = styled.div`
     display: flex;

@@ -1,3 +1,4 @@
+import {useState, useEffect} from "react";
 import {DefaultText} from "./DefaultText";
 import Responsive from '../svg/resize.svg';
 import Clean from '../svg/menu.svg';
@@ -9,17 +10,18 @@ import './Benefits.css';
 import {
     MainDiv,
     GridDiv,
+    ItemDiv,
     RowDiv,
     SvgDiv,
     Svg
 } from './BenefitsStyled';
 
-export default () => {
+export default (props) => {
     return (
         <MainDiv>
             <DefaultText align={"center"} color={"#2f2e41"} font={"40px"} bolder={"bold"}>Benefícios de trabalhar comigo</DefaultText>
             <GridDiv>
-                <div className={"item1"}>
+                <ItemDiv display={props.display ? 'flex' : 'none'} className={"item1"}>
                     <DefaultText font={"25px"} color={"#2f2e41"} bolder={"bold"}>O básico</DefaultText>
                     <RowDiv>
                         <SvgDiv>
@@ -50,16 +52,16 @@ export default () => {
                         </SvgDiv>
                         <DefaultText font={"22px"} color={"#2f2e41"} bolder={"bold"} mTop={"0"}>SEO</DefaultText>
                     </RowDiv>
-                </div>
+                </ItemDiv>
 
-                <div className={"item2"}>
+                <ItemDiv display={props.display2 ? 'flex' : 'none'} className={"item2"}>
                     <DefaultText font={"25px"} color={"#2f2e41"} bolder={"bold"} mTop={"0"}>Fluxo rápido de
                         trabalho</DefaultText>
                     <DefaultText font={"25px"} color={"#999"} bolder={"bold"} mTop={"0"}>Rápido como um
                         raio</DefaultText>
-                </div>
+                </ItemDiv>
 
-                <div className={"item3"}>
+                <ItemDiv display={props.display3 ? 'flex' : 'none'} className={"item3"}>
                     <DefaultText font={"25px"} color={"#2f2e41"} bolder={"bold"} mTop={"0"}>Desenvolvimento</DefaultText>
                     <DefaultText font={"25px"} color={"#999"} bolder={"bold"} mTop={"0"}>Tudo por uma mão</DefaultText>
                     <DefaultText color={"#2f2e41"} width={"80%"} font={"22px"}>
@@ -67,9 +69,9 @@ export default () => {
                         só
                         precisará ter contado comigo.
                     </DefaultText>
-                </div>
+                </ItemDiv>
 
-                <div className={"item4"}>
+                <ItemDiv display={props.display4 ? 'flex' : 'none'} className={"item4"}>
                     <DefaultText font={"25px"} color={"#2f2e41"} bolder={"bold"} mTop={"0"}>Relatório de
                         atividades</DefaultText>
                     <DefaultText font={"25px"} color={"#999"} bolder={"bold"} mTop={"0"}>Todo o suporte
@@ -78,7 +80,7 @@ export default () => {
                         Caso o cliente queira, pode acompanhar de perto o projeto, quanto dele já foi feito, quanto
                         falta e etc.
                     </DefaultText>
-                </div>
+                </ItemDiv>
             </GridDiv>
 
         </MainDiv>

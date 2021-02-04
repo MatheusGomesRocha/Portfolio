@@ -21,10 +21,17 @@ import MoreInfoComponent from "./components/MoreInfoComponent";
 import WorksComponent from "./components/WorksComponent";
 
 import './App.css'
+import {useEffect, useState} from "react";
 
 export default () => {
     let primaryColor = '#2f2e41';
     let secondaryColor = '#fff';
+
+    const [displayBlock, setDisplayBlock] = useState(false);
+    const [displayBlock2, setDisplayBlock2] = useState(false);
+    const [displayBlock3, setDisplayBlock3] = useState(false);
+    const [displayBlock4, setDisplayBlock4] = useState(false);
+    const [showMoreInfo, setShowMoreInfo] = useState(false);
 
     const DefaultBtn = withStyles(() => ({
         root: {
@@ -46,7 +53,29 @@ export default () => {
         },
     }))(Button);
 
-  return(
+
+    const handleScroll = () => {        // Verifica se o scroll é maior que 1900 e mostra uma área
+        if (document.documentElement.scrollTop > 1200) {
+            setDisplayBlock(true);
+        } if(document.documentElement.scrollTop > 1400) {
+            setDisplayBlock2(true);
+        } if(document.documentElement.scrollTop > 1600) {
+            setDisplayBlock3(true);
+        } if(document.documentElement.scrollTop > 1800) {
+            setDisplayBlock4(true);
+        } if (document.documentElement.scrollTop > 2500) {
+            setShowMoreInfo(true);
+        }
+    }
+
+    useEffect(() => {       // Ao carregar a página já executa a função para pegar o valor do scroll
+        window.onscroll = () => {
+            handleScroll();
+        };
+    }, [])
+
+
+    return(
       <Container>
           <Header>
 
@@ -78,9 +107,9 @@ export default () => {
 
           <AboutMeComponent />
 
-          <BenefitsComponent />
+          <BenefitsComponent display={displayBlock} display2={displayBlock2} display3={displayBlock3} display4={displayBlock4}/>
 
-          <MoreInfoComponent />
+          <MoreInfoComponent showMoreInfo={showMoreInfo}/>
 
           <WorksComponent />
       </Container>
