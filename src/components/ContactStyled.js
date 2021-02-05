@@ -20,8 +20,7 @@ export const RightDiv = styled.div`
     flex-direction: column;
     padding: 50px; 
     height: 500px;
-
-
+    background-color: #F5F5F5;
 `;
 export const RightCenterDiv = styled.div`
     display: grid;
@@ -55,4 +54,25 @@ export const InputBig = styled.textarea`
     }
 `;
 
-export const Icon = styled.img``;
+export const IconDiv = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+`;
+export const IconBall = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #2f2e41;
+    margin-left: 10px;
+    transition: 250ms;
+    
+    :hover {
+        cursor: pointer;
+        background-color: #484663;
+    }
+`;

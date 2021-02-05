@@ -1,9 +1,12 @@
 import {useState} from 'react';
 import {DefaultText} from './DefaultText';
 import './Contact.css';
-
 import {withStyles} from "@material-ui/core/styles";
 import {Button} from "@material-ui/core";
+
+import Facebook from '../svg/facebook';
+import Instagram from '../svg/instagram';
+import Linkedin from '../svg/linkedin';
 
 import {
     MainDiv,
@@ -12,6 +15,8 @@ import {
     RightCenterDiv,
     Input,
     InputBig,
+    IconDiv,
+    IconBall,
     Icon,
 } from "./ContactStyled";
 
@@ -32,7 +37,7 @@ export default () => {
             justifyContent: 'center',
 
             '&:hover': {
-                backgroundColor: '#000',
+                backgroundColor: '#484663',
             }
         },
     }))(Button);
@@ -42,12 +47,24 @@ export default () => {
             <LeftDiv>
                 <DefaultText mTop={"100px"} align={"center"} font={"30px"} color={secondaryColor}>Aberto para negócios</DefaultText>
                 <DefaultText align={"center"} font={"35px"} color={primaryColor} bolder={"bold"} mTop={"0"}>Minhas redes sociais</DefaultText>
-                <DefaultText align={"center"} font={"25px"} color={secondaryColor} mTop={"10px"}>
+                <DefaultText width={"80%"} align={"center"} font={"25px"} color={secondaryColor} mTop={"10px"}>
                     Por aqui você pode me contatar para tirar dúvidas sobre preço, horário, processo de criação e etc...
                 </DefaultText>
 
                 <DefaultText mTop={"50px"} align={"center"} color={secondaryColor} font={"25px"} bolder={"bold"}><span style={{color: primaryColor}}>Telefone: </span> (85) 99253-3108</DefaultText>
                 <DefaultText mTop={"10px"} align={"center"} color={secondaryColor} font={"25px"} bolder={"bold"}><span style={{color: primaryColor}}>Email: </span> matheusgomes192@hotmail.com</DefaultText>
+
+                <IconDiv>
+                    <IconBall>
+                        <Facebook fill={"#fff"} />
+                    </IconBall>
+                    <IconBall>
+                        <Instagram fill={'#fff'} />
+                    </IconBall>
+                    <IconBall>
+                        <Linkedin fill={'#fff'} />
+                    </IconBall>
+                </IconDiv>
             </LeftDiv>
 
             <RightDiv>
@@ -62,5 +79,7 @@ export default () => {
             </RightDiv>
 
         </MainDiv>
+
+
     );
 }

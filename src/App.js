@@ -49,7 +49,7 @@ export default () => {
             justifyContent: 'center',
 
             '&:hover': {
-                backgroundColor: '#008353',
+                backgroundColor: '#484663',
             }
         },
     }))(Button);
