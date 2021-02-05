@@ -39,12 +39,12 @@ export default () => {
     const [showContact, setShowContact] = useState(false);
     const [fixedHeader, setFixedHeader] = useState(false);
 
-    const [hoverLink, setHoverLink] = useState(false);
-    const [hoverLink2, setHoverLink2] = useState(false);
-    const [hoverLink3, setHoverLink3] = useState(false);
-    const [hoverLink4, setHoverLink4] = useState(false);
-    const [hoverLink5, setHoverLink5] = useState(false);
-    const [hoverLink6, setHoverLink6] = useState(false);
+    const [sectionHome, setSectionHome] = useState(false);
+    const [sectionAbout, setSectionAbout] = useState(false);
+    const [sectionBenefits, setSectionBenefits] = useState(false);
+    const [sectionInfos, setSectionInfos] = useState(false);
+    const [sectionWorks, setSectionWorks] = useState(false);
+    const [sectionContact, setSectionContact] = useState(false);
 
     const DefaultBtn = withStyles(() => ({
         root: {
@@ -68,6 +68,25 @@ export default () => {
 
 
     const handleScroll = () => {        // Verifica se o scroll é maior que 1900 e mostra uma área
+        if (document.documentElement.scrollTop > 0) {
+            setFixedHeader(true);
+            setSectionWorks(false);
+            setSectionContact(false);
+            setSectionBenefits(false);
+            setSectionAbout(false);
+            setSectionInfos(false);
+            setSectionHome(true);
+        } if (document.documentElement.scrollTop <= 0) {
+            setFixedHeader(false);
+            setSectionHome(false);
+        } if (document.documentElement.scrollTop > 800) {
+            setSectionHome(false);
+            setSectionWorks(false);
+            setSectionContact(false);
+            setSectionBenefits(false);
+            setSectionInfos(false);
+            setSectionAbout(true);
+        }
         if (document.documentElement.scrollTop > 1200) {
             setDisplayBlock(true);
         }
@@ -79,16 +98,37 @@ export default () => {
         }
         if (document.documentElement.scrollTop > 1800) {
             setDisplayBlock4(true);
+            setSectionHome(false);
+            setSectionAbout(false);
+            setSectionWorks(false);
+            setSectionContact(false);
+            setSectionInfos(false);
+            setSectionBenefits(true);
         }
         if (document.documentElement.scrollTop > 2500) {
             setShowMoreInfo(true);
+            setSectionHome(false);
+            setSectionAbout(false);
+            setSectionWorks(false);
+            setSectionContact(false);
+            setSectionBenefits(false);
+            setSectionInfos(true);
+        } if (document.documentElement.scrollTop > 3100) {
+            setSectionHome(false);
+            setSectionAbout(false);
+            setSectionContact(false);
+            setSectionBenefits(false);
+            setSectionInfos(false);
+            setSectionWorks(true);
         }
         if (document.documentElement.scrollTop > 3800) {
             setShowContact(true);
-        } if (document.documentElement.scrollTop > 0) {
-            setFixedHeader(true);
-        } if (document.documentElement.scrollTop <= 0) {
-            setFixedHeader(false);
+            setSectionHome(false);
+            setSectionAbout(false);
+            setSectionWorks(false);
+            setSectionBenefits(false);
+            setSectionInfos(false);
+            setSectionContact(true);
         }
     }
 
@@ -97,10 +137,6 @@ export default () => {
             handleScroll();
         };
     }, [])
-
-    const scrollToAbout = () => {
-        window.scrollTo(0, 800);
-    }
 
     return (
         <Container>
@@ -112,17 +148,17 @@ export default () => {
                     <HeaderLink href="#home">Home</HeaderLink>
 
                     <HeaderLinkDiv>
-                        <HeaderLink href="#home">Home</HeaderLink>
+                        <HeaderLink color={sectionHome ? '#FF5E62' : '#fff'} href="#home">Home</HeaderLink>
 
-                        <HeaderLink href="#about">Sobre</HeaderLink>
+                        <HeaderLink color={sectionAbout ? '#FF5E62' : '#fff'} href="#about">Sobre</HeaderLink>
 
-                        <HeaderLink href="#benefits">Benefícios</HeaderLink>
+                        <HeaderLink color={sectionBenefits ? '#FF5E62' : '#fff'} href="#benefits">Benefícios</HeaderLink>
 
-                        <HeaderLink href="#infos">Infos</HeaderLink>
+                        <HeaderLink color={sectionInfos ? '#FF5E62' : '#fff'} href="#infos">Infos</HeaderLink>
 
-                        <HeaderLink href="#works">Trabalhos</HeaderLink>
+                        <HeaderLink color={sectionWorks ? '#FF5E62' : '#fff'} href="#works">Trabalhos</HeaderLink>
 
-                        <HeaderLink href="#contact">Contato</HeaderLink>
+                        <HeaderLink color={sectionContact ? '#FF5E62' : '#fff'} href="#contact">Contato</HeaderLink>
                     </HeaderLinkDiv>
 
                 </HeaderTop>

@@ -18,7 +18,7 @@ export const HeaderTop = styled.div`
     height: 75px;
     width: 100%;
     position: ${props=>props.position};
-    background-color: ${props=>props.background || '#000'};
+    background-color: ${props=>props.background};
     top: 0;
     transition: 500ms;
     z-index: 999;
@@ -33,13 +33,12 @@ export const HeaderLinkDiv = styled.div`
 `;
 export const HeaderLink = styled.a`
     font-size: 22px;
-    color: ${props=>props.color};
     font-weight: bold;
     font-family: courier;
     transition: 250ms;
     text-decoration: none;
     margin-left: 30px;
-    color: #fff;
+    color: ${props=>props.color};
     
     :hover {
         color: #FF5E62;
