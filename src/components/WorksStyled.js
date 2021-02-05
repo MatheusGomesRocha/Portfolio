@@ -4,8 +4,8 @@ export const MainDiv = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 150px;
-    margin-bottom: 200px;
+    padding-top: 150px;
+    padding-bottom: 200px;
 `;
 export const GridDiv = styled.div`
     display: grid;

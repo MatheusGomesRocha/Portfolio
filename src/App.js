@@ -17,7 +17,7 @@ import {
     HeaderLinkDiv,
     HeaderLink,
     HeaderLeft,
-    HeaderImg, HeaderBottom,
+    HeaderImg, HeaderBottom, HeaderTopHidden,
 } from './AppStyled';
 
 import AboutMeComponent from "./components/AboutMeComponent";
@@ -37,6 +37,7 @@ export default () => {
     const [displayBlock4, setDisplayBlock4] = useState(false);
     const [showMoreInfo, setShowMoreInfo] = useState(false);
     const [showContact, setShowContact] = useState(false);
+    const [fixedHeader, setFixedHeader] = useState(false);
 
     const [hoverLink, setHoverLink] = useState(false);
     const [hoverLink2, setHoverLink2] = useState(false);
@@ -69,16 +70,25 @@ export default () => {
     const handleScroll = () => {        // Verifica se o scroll é maior que 1900 e mostra uma área
         if (document.documentElement.scrollTop > 1200) {
             setDisplayBlock(true);
-        } if(document.documentElement.scrollTop > 1400) {
+        }
+        if (document.documentElement.scrollTop > 1400) {
             setDisplayBlock2(true);
-        } if(document.documentElement.scrollTop > 1600) {
+        }
+        if (document.documentElement.scrollTop > 1600) {
             setDisplayBlock3(true);
-        } if(document.documentElement.scrollTop > 1800) {
+        }
+        if (document.documentElement.scrollTop > 1800) {
             setDisplayBlock4(true);
-        } if (document.documentElement.scrollTop > 2500) {
+        }
+        if (document.documentElement.scrollTop > 2500) {
             setShowMoreInfo(true);
-        } if (document.documentElement.scrollTop > 3800) {
+        }
+        if (document.documentElement.scrollTop > 3800) {
             setShowContact(true);
+        } if (document.documentElement.scrollTop > 0) {
+            setFixedHeader(true);
+        } if (document.documentElement.scrollTop <= 0) {
+            setFixedHeader(false);
         }
     }
 
@@ -88,76 +98,87 @@ export default () => {
         };
     }, [])
 
+    const scrollToAbout = () => {
+        window.scrollTo(0, 800);
+    }
 
-    return(
-      <Container>
-          <Header>
-              <HeaderTop>
-                  <HeaderLinkDiv onMouseOver={() => setHoverLink(true)} onMouseOut={() => setHoverLink(false)}>
-                      <HeaderLink color={hoverLink ? '#2f2e41' : '#fff'}>Home</HeaderLink>
-                  </HeaderLinkDiv>
+    return (
+        <Container>
+            <Header id={"home"}>
+                <HeaderTopHidden display={fixedHeader ? 'flex' : 'none'}></HeaderTopHidden>
 
-                  <HeaderLinkDiv onMouseOver={() => setHoverLink2(true)} onMouseOut={() => setHoverLink2(false)}>
-                      <HeaderLink color={hoverLink2 ? '#2f2e41' : '#fff'}>Sobre</HeaderLink>
-                  </HeaderLinkDiv>
+                <HeaderTop background={fixedHeader && '#2f2e41'} position={fixedHeader && 'fixed'}>
 
-                  <HeaderLinkDiv onMouseOver={() => setHoverLink3(true)} onMouseOut={() => setHoverLink3(false)}>
-                      <HeaderLink color={hoverLink3 ? '#2f2e41' : '#fff'}>Benefícios</HeaderLink>
-                  </HeaderLinkDiv>
+                    <HeaderLink href="#home">Home</HeaderLink>
 
-                  <HeaderLinkDiv onMouseOver={() => setHoverLink4(true)} onMouseOut={() => setHoverLink4(false)}>
-                      <HeaderLink color={hoverLink4 ? '#2f2e41' : '#fff'}>Infos</HeaderLink>
-                  </HeaderLinkDiv>
+                    <HeaderLinkDiv>
+                        <HeaderLink href="#home">Home</HeaderLink>
 
-                  <HeaderLinkDiv onMouseOver={() => setHoverLink5(true)} onMouseOut={() => setHoverLink5(false)}>
-                      <HeaderLink color={hoverLink5 ? '#2f2e41' : '#fff'}>Trabalhos</HeaderLink>
-                  </HeaderLinkDiv>
+                        <HeaderLink href="#about">Sobre</HeaderLink>
 
-                  <HeaderLinkDiv onMouseOver={() => setHoverLink6(true)} onMouseOut={() => setHoverLink6(false)}>
-                      <HeaderLink color={hoverLink6 ? '#2f2e41' : '#fff'}>Contato</HeaderLink>
-                  </HeaderLinkDiv>
-              </HeaderTop>
+                        <HeaderLink href="#benefits">Benefícios</HeaderLink>
 
-              <HeaderBottom>
-                  <HeaderLeft>
-                      <Typist>
-                          <DefaultText font={'30px'} color={secondaryColor}>Olá,</DefaultText>
-                          <br />
-                          <DefaultText font={'40px'} color={primaryColor} bolder={"bold"}>Meu nome é <br /> Matheus Gomes</DefaultText>
-                          <br />
-                          <DefaultText font={'30px'} color={secondaryColor}>Bem vindo ao meu portfólio</DefaultText>
-                      </Typist>
+                        <HeaderLink href="#infos">Infos</HeaderLink>
 
-                      <DefaultBtn> Vamos Começar </DefaultBtn>
-                  </HeaderLeft>
+                        <HeaderLink href="#works">Trabalhos</HeaderLink>
 
-                  <HeaderImg src={Header_img}/>
-              </HeaderBottom>
+                        <HeaderLink href="#contact">Contato</HeaderLink>
+                    </HeaderLinkDiv>
+
+                </HeaderTop>
+
+                <HeaderBottom>
+                    <HeaderLeft>
+                        <Typist>
+                            <DefaultText font={'30px'} color={secondaryColor}>Olá,</DefaultText>
+                            <br/>
+                            <DefaultText font={'40px'} color={primaryColor} bolder={"bold"}>Meu nome é <br/> Matheus
+                                Gomes</DefaultText>
+                            <br/>
+                            <DefaultText font={'30px'} color={secondaryColor}>Bem vindo ao meu portfólio</DefaultText>
+                        </Typist>
+
+                        <DefaultBtn> Vamos Começar </DefaultBtn>
+                    </HeaderLeft>
+
+                    <HeaderImg src={Header_img}/>
+                </HeaderBottom>
 
 
-          </Header>
+            </Header>
 
-          <div className="custom-shape-divider-bottom-1612379057">
-              <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                   preserveAspectRatio="none">
-                  <path
-                      d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-                      className="shape-fill"></path>
-              </svg>
-          </div>
+            <div className="custom-shape-divider-bottom-1612379057">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                     preserveAspectRatio="none">
+                    <path
+                        d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                        className="shape-fill"></path>
+                </svg>
+            </div>
 
-          <AboutMeComponent />
+            <div id={"about"}>
+                <AboutMeComponent/>
+            </div>
 
-          <BenefitsComponent display={displayBlock} display2={displayBlock2} display3={displayBlock3} display4={displayBlock4}/>
+            <div id={"benefits"}>
+                <BenefitsComponent display={displayBlock} display2={displayBlock2} display3={displayBlock3}
+                                   display4={displayBlock4}/>
+            </div>
 
-          <MoreInfoComponent showMoreInfo={showMoreInfo}/>
+            <div id={"infos"}>
+                <MoreInfoComponent showMoreInfo={showMoreInfo}/>
+            </div>
 
-          <WorksComponent />
+            <div id={"works"}>
+                <WorksComponent/>
+            </div>
 
-          <ContactComponent showContact={showContact}/>
+            <div id={"contact"}>
+                <ContactComponent showContact={showContact}/>
+            </div>
 
-          <FooterComponent />
-      </Container>
+            <FooterComponent/>
+        </Container>
 
-  );
+    );
 }

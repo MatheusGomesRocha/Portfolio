@@ -14,27 +14,36 @@ export const Header = styled.div`
 export const HeaderTop = styled.div`
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
+    height: 75px;
+    width: 100%;
+    position: ${props=>props.position};
+    background-color: ${props=>props.background || '#000'};
+    top: 0;
+    transition: 500ms;
+    z-index: 999;
+`;
+export const HeaderTopHidden = styled.div`
+    display: ${props=>props.display};
     height: 100px;
-    padding: 0 30px;
 `;
 export const HeaderLinkDiv = styled.div`
-    margin-left: 30px;
-    height: 100px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    :hover {
-        cursor: pointer;
-    }
+    margin-right: 80px;
 `;
 export const HeaderLink = styled.a`
-    font-size: 25px;
+    font-size: 22px;
     color: ${props=>props.color};
     font-weight: bold;
     font-family: courier;
     transition: 250ms;
+    text-decoration: none;
+    margin-left: 30px;
+    color: #fff;
+    
+    :hover {
+        color: #FF5E62;
+    }
 `;
 
 export const HeaderBottom = styled.div`

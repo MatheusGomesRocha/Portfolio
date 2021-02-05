@@ -12,7 +12,7 @@ export default () => {
     return(
         <MainDiv>
             <DefaultText font={"20px"} mTop={"0"} align={"center"} bolder={"bold"} color={primaryColor}>Feito por Matheus Gomes. </DefaultText>
-            <DefaultText font={"20px"} mTop={"0"} align={"center"} color={secondaryColor}>Todos os direitos reservados. </DefaultText>
+            <DefaultText font={"20px"} mTop={"0"} align={"center"} color={secondaryColor}>© Todos os direitos reservados. </DefaultText>
         </MainDiv>
     );
 }
