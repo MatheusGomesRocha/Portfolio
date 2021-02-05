@@ -1,3 +1,5 @@
+import {useEffect, useState} from "react";
+import './App.css'
 import Typist from 'react-typist';
 import Header_img from './header_img.svg';
 import {DefaultText} from './components/DefaultText';
@@ -19,9 +21,8 @@ import AboutMeComponent from "./components/AboutMeComponent";
 import BenefitsComponent from "./components/BenefitsComponent";
 import MoreInfoComponent from "./components/MoreInfoComponent";
 import WorksComponent from "./components/WorksComponent";
+import ContactComponent from "./components/ContactComponent";
 
-import './App.css'
-import {useEffect, useState} from "react";
 
 export default () => {
     let primaryColor = '#2f2e41';
@@ -112,6 +113,8 @@ export default () => {
           <MoreInfoComponent showMoreInfo={showMoreInfo}/>
 
           <WorksComponent />
+
+          <ContactComponent />
       </Container>
 
   );
