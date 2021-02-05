@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd8618c2-40d8-4a00-bbc3-a9d29c113ef8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/svg/facebook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/svg/instagram.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/svg/linkedin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/FooterComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/FooterStyled.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ContactComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ContactStyled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactStyled.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -83,7 +81,8 @@
       <workItem from="1612441100762" duration="2919000" />
       <workItem from="1612464684431" duration="3313000" />
       <workItem from="1612468058967" duration="57000" />
-      <workItem from="1612526955633" duration="6589000" />
+      <workItem from="1612526955633" duration="6771000" />
+      <workItem from="1612544635362" duration="1602000" />
     </task>
     <servers />
   </component>

@@ -5,7 +5,6 @@ export const MainDiv = styled.div`
     grid-template-columns: 50% 50%;
     border-top: 1px solid #999;
     border-bottom: 1px solid #999;
-    height: 600px;
 `;
 
 export const LeftDiv = styled.div`
@@ -13,13 +12,11 @@ export const LeftDiv = styled.div`
     flex-direction: column;
     align-items: center;
     border-right: 1px solid #999;
-    height: 600px;
 `;
 export const RightDiv = styled.div`
     display: flex;
     flex-direction: column;
     padding: 50px; 
-    height: 500px;
     background-color: #F5F5F5;
 `;
 export const RightCenterDiv = styled.div`
@@ -29,6 +26,7 @@ export const RightCenterDiv = styled.div`
     grid-column-gap: 15px;
     grid-row-gap: 15px;
     padding: 50px 10px;
+    height: 400px;
 `;
 export const Input = styled.input`
     border: 1px solid #999;
@@ -43,7 +41,6 @@ export const Input = styled.input`
 `;
 export const InputBig = styled.textarea`
     border: 1px solid #999;
-    height: 200px;
     padding: 10px 0 0 10px;
     font-size: 20px;
     margin-top: -80px;

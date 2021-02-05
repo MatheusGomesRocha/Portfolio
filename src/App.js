@@ -22,7 +22,7 @@ import BenefitsComponent from "./components/BenefitsComponent";
 import MoreInfoComponent from "./components/MoreInfoComponent";
 import WorksComponent from "./components/WorksComponent";
 import ContactComponent from "./components/ContactComponent";
-
+import FooterComponent from "./components/FooterComponent";
 
 export default () => {
     let primaryColor = '#2f2e41';
@@ -96,7 +96,6 @@ export default () => {
 
           </Header>
 
-
           <div className="custom-shape-divider-bottom-1612379057">
               <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                    preserveAspectRatio="none">
@@ -115,6 +114,8 @@ export default () => {
           <WorksComponent />
 
           <ContactComponent />
+
+          <FooterComponent />
       </Container>
 
   );
