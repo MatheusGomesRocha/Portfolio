@@ -13,8 +13,11 @@ import {
     Container,
 
     Header,
+    HeaderTop,
+    HeaderLinkDiv,
+    HeaderLink,
     HeaderLeft,
-    HeaderImg,
+    HeaderImg, HeaderBottom,
 } from './AppStyled';
 
 import AboutMeComponent from "./components/AboutMeComponent";
@@ -34,6 +37,13 @@ export default () => {
     const [displayBlock4, setDisplayBlock4] = useState(false);
     const [showMoreInfo, setShowMoreInfo] = useState(false);
     const [showContact, setShowContact] = useState(false);
+
+    const [hoverLink, setHoverLink] = useState(false);
+    const [hoverLink2, setHoverLink2] = useState(false);
+    const [hoverLink3, setHoverLink3] = useState(false);
+    const [hoverLink4, setHoverLink4] = useState(false);
+    const [hoverLink5, setHoverLink5] = useState(false);
+    const [hoverLink6, setHoverLink6] = useState(false);
 
     const DefaultBtn = withStyles(() => ({
         root: {
@@ -82,20 +92,48 @@ export default () => {
     return(
       <Container>
           <Header>
+              <HeaderTop>
+                  <HeaderLinkDiv onMouseOver={() => setHoverLink(true)} onMouseOut={() => setHoverLink(false)}>
+                      <HeaderLink color={hoverLink ? '#2f2e41' : '#fff'}>Home</HeaderLink>
+                  </HeaderLinkDiv>
 
-              <HeaderLeft>
-                  <Typist>
-                      <DefaultText font={'30px'} color={secondaryColor}>Olá,</DefaultText>
-                      <br />
-                      <DefaultText font={'40px'} color={primaryColor} bolder={"bold"}>Meu nome é <br /> Matheus Gomes</DefaultText>
-                      <br />
-                      <DefaultText font={'30px'} color={secondaryColor}>Bem vindo ao meu portfólio</DefaultText>
-                  </Typist>
+                  <HeaderLinkDiv onMouseOver={() => setHoverLink2(true)} onMouseOut={() => setHoverLink2(false)}>
+                      <HeaderLink color={hoverLink2 ? '#2f2e41' : '#fff'}>Sobre</HeaderLink>
+                  </HeaderLinkDiv>
 
-                  <DefaultBtn> Vamos Começar </DefaultBtn>
-              </HeaderLeft>
+                  <HeaderLinkDiv onMouseOver={() => setHoverLink3(true)} onMouseOut={() => setHoverLink3(false)}>
+                      <HeaderLink color={hoverLink3 ? '#2f2e41' : '#fff'}>Benefícios</HeaderLink>
+                  </HeaderLinkDiv>
 
-              <HeaderImg src={Header_img}/>
+                  <HeaderLinkDiv onMouseOver={() => setHoverLink4(true)} onMouseOut={() => setHoverLink4(false)}>
+                      <HeaderLink color={hoverLink4 ? '#2f2e41' : '#fff'}>Infos</HeaderLink>
+                  </HeaderLinkDiv>
+
+                  <HeaderLinkDiv onMouseOver={() => setHoverLink5(true)} onMouseOut={() => setHoverLink5(false)}>
+                      <HeaderLink color={hoverLink5 ? '#2f2e41' : '#fff'}>Trabalhos</HeaderLink>
+                  </HeaderLinkDiv>
+
+                  <HeaderLinkDiv onMouseOver={() => setHoverLink6(true)} onMouseOut={() => setHoverLink6(false)}>
+                      <HeaderLink color={hoverLink6 ? '#2f2e41' : '#fff'}>Contato</HeaderLink>
+                  </HeaderLinkDiv>
+              </HeaderTop>
+
+              <HeaderBottom>
+                  <HeaderLeft>
+                      <Typist>
+                          <DefaultText font={'30px'} color={secondaryColor}>Olá,</DefaultText>
+                          <br />
+                          <DefaultText font={'40px'} color={primaryColor} bolder={"bold"}>Meu nome é <br /> Matheus Gomes</DefaultText>
+                          <br />
+                          <DefaultText font={'30px'} color={secondaryColor}>Bem vindo ao meu portfólio</DefaultText>
+                      </Typist>
+
+                      <DefaultBtn> Vamos Começar </DefaultBtn>
+                  </HeaderLeft>
+
+                  <HeaderImg src={Header_img}/>
+              </HeaderBottom>
+
 
           </Header>
 
