@@ -5,19 +5,32 @@ export const MainDiv = styled.div`
     grid-template-columns: 50% 50%;
     border-top: 1px solid #999;
     border-bottom: 1px solid #999;
+    height: 700px;
 `;
 
 export const LeftDiv = styled.div`
-    display: flex;
+    display: ${props=>props.display};
     flex-direction: column;
     align-items: center;
     border-right: 1px solid #999;
+    animation: fadeLeft 0.5s;
+    
+    @keyframes fadeLeft {
+        from {opacity: 0; transform: translateX(-40%)}
+        to {opacity: 1;}
+    }
 `;
 export const RightDiv = styled.div`
-    display: flex;
+    display: ${props=>props.display};
     flex-direction: column;
     padding: 50px; 
     background-color: #F5F5F5;
+    animation: fadeRight 0.5s;
+
+    @keyframes fadeRight {
+        from {opacity: 0; transform: translateX(40%)}
+        to {opacity: 1;}
+    }
 `;
 export const RightCenterDiv = styled.div`
     display: grid;

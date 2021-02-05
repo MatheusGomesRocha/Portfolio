@@ -33,6 +33,7 @@ export default () => {
     const [displayBlock3, setDisplayBlock3] = useState(false);
     const [displayBlock4, setDisplayBlock4] = useState(false);
     const [showMoreInfo, setShowMoreInfo] = useState(false);
+    const [showContact, setShowContact] = useState(false);
 
     const DefaultBtn = withStyles(() => ({
         root: {
@@ -66,6 +67,8 @@ export default () => {
             setDisplayBlock4(true);
         } if (document.documentElement.scrollTop > 2500) {
             setShowMoreInfo(true);
+        } if (document.documentElement.scrollTop > 3800) {
+            setShowContact(true);
         }
     }
 
@@ -113,7 +116,7 @@ export default () => {
 
           <WorksComponent />
 
-          <ContactComponent />
+          <ContactComponent showContact={showContact}/>
 
           <FooterComponent />
       </Container>

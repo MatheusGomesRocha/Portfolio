@@ -20,7 +20,7 @@ import {
     Icon,
 } from "./ContactStyled";
 
-export default () => {
+export default (props) => {
     const [primaryColor, setPrimaryColor] = useState('#2f2e41');
     const [secondaryColor, setSecondaryColor] = useState('#999');
 
@@ -44,7 +44,7 @@ export default () => {
 
     return(
         <MainDiv>
-            <LeftDiv>
+            <LeftDiv display={props.showContact ? 'flex' : 'none'}>
                 <DefaultText mTop={"100px"} align={"center"} font={"30px"} color={secondaryColor}>Aberto para negócios</DefaultText>
                 <DefaultText align={"center"} font={"35px"} color={primaryColor} bolder={"bold"} mTop={"0"}>Minhas redes sociais</DefaultText>
                 <DefaultText width={"80%"} align={"center"} font={"25px"} color={secondaryColor} mTop={"10px"}>
@@ -67,7 +67,7 @@ export default () => {
                 </IconDiv>
             </LeftDiv>
 
-            <RightDiv>
+            <RightDiv display={props.showContact ? 'flex' : 'none'}>
                 <DefaultText align={"center"} font={"35px"} bolder={"bold"} color={primaryColor}>Fale comigo</DefaultText>
                 <DefaultText mTop={"0px"} align={"center"} font={"30px"} bolder={"bold"} color={secondaryColor}>Apenas para ofertas de trabalhos</DefaultText>
                 <RightCenterDiv>
