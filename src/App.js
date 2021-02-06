@@ -3,6 +3,8 @@ import './App.css'
 import Typist from 'react-typist';
 import Header_img from './header_img.svg';
 import Dots from './svg/ellipsis';
+import Sun from './svg/sun';
+import Moon from './svg/moon';
 import {DefaultText} from './components/DefaultText';
 import {Button} from '@material-ui/core';
 
@@ -14,6 +16,7 @@ import {
     Container,
 
     DarkModeDiv,
+    DarkModeDivInside,
 
     Header,
     HeaderTop,
@@ -51,6 +54,7 @@ export default () => {
     const [sectionWorks, setSectionWorks] = useState(false);
     const [sectionContact, setSectionContact] = useState(false);
 
+    const [darkMode, setDarkMode] = useState(false);
     const [darkModeDiv, setDarkModeDiv] = useState(false);
 
     const DefaultBtn = withStyles(() => ({
@@ -94,6 +98,30 @@ export default () => {
 
             '&:hover': {
                 backgroundColor: '#FF5E62',
+            }
+        },
+    }))(Button);
+
+    const DarkMode = withStyles(() => ({
+        root: {
+            backgroundColor: '#333',
+            padding: 20,
+            fontSize: 16,
+            height: 50,
+            width: 50,
+            borderRadius: 10,
+            color: '#fff',
+            position: 'fixed',
+            bottom: 25,
+            right: 25,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            transition: '500ms',
+            zIndex: 999,
+
+            '&:hover': {
+                border: '1px solid #fff',
             }
         },
     }))(Button);
@@ -177,7 +205,18 @@ export default () => {
                     <Dots />
                 </DarkModeBtn>
 
-                <DarkModeDiv display={darkModeDiv ? 'flex' : 'none'}></DarkModeDiv>
+                <DarkModeDiv display={darkModeDiv ? 'flex' : 'none'}>
+                    <DefaultText mTop={"0"} color={"#fff"} weight={"bold"} align={"center"} font={"22px"}>Modo</DefaultText>
+                    <DarkModeDivInside onClick={() => setDarkMode(false)} background={darkMode ? 'transparent' : '#fff'}>
+                        <Sun fill={darkMode ? '#fff' : '#2f2e41'}/>
+                        <DefaultText style={{marginLeft: 20}} font={"20px"} align={"center"} color={darkMode ? '#fff' : '#2f2e41'} mTop={"0"}>Light Mode</DefaultText>
+                    </DarkModeDivInside>
+
+                    <DarkModeDivInside onClick={() => setDarkMode(true)} background={darkMode ? '#fff' : 'transparent'}>
+                        <Moon fill={darkMode ? '#2f2e41' : '#fff'}/>
+                        <DefaultText style={{marginLeft: 20}} font={"20px"} color={darkMode ? '#2f2e41' : '#fff'} mTop={"0"}>Dark Mode</DefaultText>
+                    </DarkModeDivInside>
+                </DarkModeDiv>
 
                 <HeaderTopHidden display={fixedHeader ? 'flex' : 'none'}></HeaderTopHidden>
 

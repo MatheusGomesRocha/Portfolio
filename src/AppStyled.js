@@ -6,21 +6,42 @@ export const Container = styled.div``;
 
 export const DarkModeDiv = styled.div`
     display: ${props=>props.display};
-    animation: grow 500ms;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: grow 250ms;
     position: fixed;
-    bottom: 25px;
+    bottom: 85px;
     right: 25px;
     z-index: 999;
     background-color: #2f2e41;
     width: 200px;
     height: 200px;
     border-radius: 10px;
+    padding: 0 10px;
     
     @keyframes grow {
         from {width: 0; height: 0;}
         to {width: 200px; height: 200px;}
     }
 `;
+export const DarkModeDivInside = styled.div`
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: ${props=>props.background};
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 0 10px;
+    border: 1px solid #2f2e41;
+    transition: 500ms;
+    
+    :hover {
+        cursor: pointer;
+        border: 1px solid #fff;
+    }
+`;
+
 export const Header = styled.div`
     display: flex;
     flex-direction: column;
