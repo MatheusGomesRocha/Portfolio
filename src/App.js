@@ -36,8 +36,8 @@ import ContactComponent from "./components/ContactComponent";
 import FooterComponent from "./components/FooterComponent";
 
 export default () => {
-    let primaryColor = '#2f2e41';
-    let secondaryColor = '#fff';
+    const [primaryColor, setPrimaryColor] = useState('#2f2e41');
+    const [secondaryColor, setSecondaryColor] = useState('#fff');
 
     const [displayBlock, setDisplayBlock] = useState(false);
     const [displayBlock2, setDisplayBlock2] = useState(false);
@@ -98,30 +98,6 @@ export default () => {
 
             '&:hover': {
                 backgroundColor: '#FF5E62',
-            }
-        },
-    }))(Button);
-
-    const DarkMode = withStyles(() => ({
-        root: {
-            backgroundColor: '#333',
-            padding: 20,
-            fontSize: 16,
-            height: 50,
-            width: 50,
-            borderRadius: 10,
-            color: '#fff',
-            position: 'fixed',
-            bottom: 25,
-            right: 25,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            transition: '500ms',
-            zIndex: 999,
-
-            '&:hover': {
-                border: '1px solid #fff',
             }
         },
     }))(Button);
@@ -198,6 +174,12 @@ export default () => {
         };
     }, [])
 
+    const handleDarkMode = (value) => {
+            setDarkMode(true);
+            setPrimaryColor('#fff');
+            setSecondaryColor('#2f2e41');
+    }
+
     return (
         <Container>
             <Header id={"home"}>
@@ -212,7 +194,7 @@ export default () => {
                         <DefaultText style={{marginLeft: 20}} font={"20px"} align={"center"} color={darkMode ? '#fff' : '#2f2e41'} mTop={"0"}>Light Mode</DefaultText>
                     </DarkModeDivInside>
 
-                    <DarkModeDivInside onClick={() => setDarkMode(true)} background={darkMode ? '#fff' : 'transparent'}>
+                    <DarkModeDivInside onClick={handleDarkMode} background={darkMode ? '#fff' : 'transparent'}>
                         <Moon fill={darkMode ? '#2f2e41' : '#fff'}/>
                         <DefaultText style={{marginLeft: 20}} font={"20px"} color={darkMode ? '#2f2e41' : '#fff'} mTop={"0"}>Dark Mode</DefaultText>
                     </DarkModeDivInside>
@@ -220,7 +202,7 @@ export default () => {
 
                 <HeaderTopHidden display={fixedHeader ? 'flex' : 'none'}></HeaderTopHidden>
 
-                <HeaderTop background={fixedHeader && '#2f2e41'} position={fixedHeader && 'fixed'}>
+                <HeaderTop background={fixedHeader && primaryColor || fixedHeader && darkMode && primaryColor} position={fixedHeader && 'fixed'}>
 
                     <HeaderLink href="#home">Home</HeaderLink>
 
