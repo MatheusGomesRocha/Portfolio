@@ -83,6 +83,6 @@ export const IconBall = styled.div`
     
     :hover {
         cursor: pointer;
-        background-color: #484663;
+        background-color: #FF5E62;
     }
 `;

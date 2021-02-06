@@ -59,9 +59,10 @@ export default () => {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
+            transition: '500ms',
 
             '&:hover': {
-                backgroundColor: '#484663',
+                backgroundColor: '#FF5E62',
             }
         },
     }))(Button);

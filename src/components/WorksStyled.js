@@ -15,8 +15,34 @@ export const GridDiv = styled.div`
     justify-content: center;
     width: 100%;
 `;
-export const BlockDiv = styled.img`
+export const BlockDiv = styled.div`
     height: 350px;
-    background-color: #ccc;
     border-radius: 10px;
+    position: relative;
+    
+    :hover {
+        cursor: pointer;
+    }
+`;
+export const ItemDiv = styled.img`
+    height: 350px;
+    border-radius: 10px;
+`;
+export const ItemHiddenDiv = styled.div`
+    display: ${props=>props.display};
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    width: 100%;
+    border-radius: 10px;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    animation: fadeIn 500ms;
+    
+    @keyframes fadeIn{
+        from {opacity: 0}
+        to {opacity: 1}
 `;
