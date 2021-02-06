@@ -4,6 +4,23 @@ const defaultBackgroundColor = '#845EC2';
 
 export const Container = styled.div``;
 
+export const DarkModeDiv = styled.div`
+    display: ${props=>props.display};
+    animation: grow 500ms;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 999;
+    background-color: #2f2e41;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    
+    @keyframes grow {
+        from {width: 0; height: 0;}
+        to {width: 200px; height: 200px;}
+    }
+`;
 export const Header = styled.div`
     display: flex;
     flex-direction: column;

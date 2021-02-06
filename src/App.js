@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 import './App.css'
 import Typist from 'react-typist';
 import Header_img from './header_img.svg';
+import Dots from './svg/ellipsis';
 import {DefaultText} from './components/DefaultText';
 import {Button} from '@material-ui/core';
 
@@ -12,12 +13,16 @@ import {
 import {
     Container,
 
+    DarkModeDiv,
+
     Header,
     HeaderTop,
+    HeaderTopHidden,
     HeaderLinkDiv,
     HeaderLink,
+    HeaderBottom,
     HeaderLeft,
-    HeaderImg, HeaderBottom, HeaderTopHidden,
+    HeaderImg,
 } from './AppStyled';
 
 import AboutMeComponent from "./components/AboutMeComponent";
@@ -46,6 +51,8 @@ export default () => {
     const [sectionWorks, setSectionWorks] = useState(false);
     const [sectionContact, setSectionContact] = useState(false);
 
+    const [darkModeDiv, setDarkModeDiv] = useState(false);
+
     const DefaultBtn = withStyles(() => ({
         root: {
             backgroundColor: '#2f2e41',
@@ -60,6 +67,30 @@ export default () => {
             alignItems: 'center',
             justifyContent: 'center',
             transition: '500ms',
+
+            '&:hover': {
+                backgroundColor: '#FF5E62',
+            }
+        },
+    }))(Button);
+
+    const DarkModeBtn = withStyles(() => ({
+        root: {
+            backgroundColor: '#2f2e41',
+            padding: 20,
+            fontSize: 16,
+            height: 50,
+            width: 50,
+            borderRadius: 10,
+            color: '#fff',
+            position: 'fixed',
+            bottom: 25,
+            right: 25,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            transition: '500ms',
+            zIndex: 999,
 
             '&:hover': {
                 backgroundColor: '#FF5E62',
@@ -142,6 +173,12 @@ export default () => {
     return (
         <Container>
             <Header id={"home"}>
+                <DarkModeBtn onClick={() => setDarkModeDiv(true)}>
+                    <Dots />
+                </DarkModeBtn>
+
+                <DarkModeDiv display={darkModeDiv ? 'flex' : 'none'}></DarkModeDiv>
+
                 <HeaderTopHidden display={fixedHeader ? 'flex' : 'none'}></HeaderTopHidden>
 
                 <HeaderTop background={fixedHeader && '#2f2e41'} position={fixedHeader && 'fixed'}>
