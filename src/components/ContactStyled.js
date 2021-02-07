@@ -14,6 +14,8 @@ export const LeftDiv = styled.div`
     align-items: center;
     border-right: 1px solid #999;
     animation: fadeLeft 0.5s;
+    background-color: ${props=>props.background};
+    transition: 500ms;
     
     @keyframes fadeLeft {
         from {opacity: 0; transform: translateX(-40%)}
@@ -24,8 +26,9 @@ export const RightDiv = styled.div`
     display: ${props=>props.display};
     flex-direction: column;
     padding: 50px; 
-    background-color: #F5F5F5;
+    background-color: ${props=>props.background};
     animation: fadeRight 0.5s;
+    transition: 500ms;
 
     @keyframes fadeRight {
         from {opacity: 0; transform: translateX(40%)}
@@ -47,9 +50,15 @@ export const Input = styled.input`
     padding-left: 10px;
     font-size: 20px;
     border-radius: 10px;
+    background-color: ${props=>props.background};
+    color: ${props=>props.color};
     
     ::placeholder {
         color: #999;
+    }
+    
+    :focus {
+        outline: 0;
     }
 `;
 export const InputBig = styled.textarea`
@@ -58,9 +67,15 @@ export const InputBig = styled.textarea`
     font-size: 20px;
     margin-top: -80px;
     border-radius: 10px;
-    
+    background-color: ${props=>props.background};
+    color: ${props=>props.color};
+
     ::placeholder {
         color: #999;
+    }
+    
+    :focus {
+        outline: 0;
     }
 `;
 
@@ -77,9 +92,9 @@ export const IconBall = styled.div`
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #2f2e41;
+    background-color: ${props=>props.background};
     margin-left: 10px;
-    transition: 250ms;
+    transition: 500ms;
     
     :hover {
         cursor: pointer;

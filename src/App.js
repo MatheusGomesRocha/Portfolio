@@ -278,7 +278,7 @@ export default () => {
             </div>
 
             <div id={"contact"}>
-                <ContactComponent showContact={showContact}/>
+                <ContactComponent darkMode={darkMode} showContact={showContact}/>
             </div>
 
             <FooterComponent/>

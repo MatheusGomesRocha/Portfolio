@@ -26,12 +26,12 @@ export default (props) => {
 
     const DefaultBtn = withStyles(() => ({
         root: {
-            backgroundColor: '#2f2e41',
+            backgroundColor: props.darkMode ? '#fff' : '#2f2e41',
             padding: 20,
             fontSize: 16,
             height: 50,
             borderRadius: 10,
-            color: '#fff',
+            color: props.darkMode ? '#2f2e41' : '#fff',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
@@ -45,36 +45,36 @@ export default (props) => {
 
     return(
         <MainDiv>
-            <LeftDiv display={props.showContact ? 'flex' : 'none'}>
+            <LeftDiv background={props.darkMode ? '#2f2e41' : '#fff'} display={props.showContact ? 'flex' : 'none'}>
                 <DefaultText mTop={"100px"} align={"center"} font={"30px"} color={secondaryColor}>Aberto para negócios</DefaultText>
-                <DefaultText align={"center"} font={"35px"} color={primaryColor} bolder={"bold"} mTop={"0"}>Minhas redes sociais</DefaultText>
+                <DefaultText align={"center"} font={"35px"} color={props.darkMode ? '#fff' : '#2f2e41'} bolder={"bold"} mTop={"0"}>Minhas redes sociais</DefaultText>
                 <DefaultText width={"80%"} align={"center"} font={"25px"} color={secondaryColor} mTop={"10px"}>
                     Por aqui você pode me contatar para tirar dúvidas sobre preço, horário, processo de criação e etc...
                 </DefaultText>
 
-                <DefaultText mTop={"50px"} align={"center"} color={secondaryColor} font={"25px"} bolder={"bold"}><span style={{color: primaryColor}}>Telefone: </span> (85) 99253-3108</DefaultText>
-                <DefaultText mTop={"10px"} align={"center"} color={secondaryColor} font={"25px"} bolder={"bold"}><span style={{color: primaryColor}}>Email: </span> matheusgomes192@hotmail.com</DefaultText>
+                <DefaultText mTop={"50px"} align={"center"} color={secondaryColor} font={"25px"} bolder={"bold"}><span style={{color: props.darkMode ? '#fff' : '#2f2e41'}}>Telefone: </span> (85) 99253-3108</DefaultText>
+                <DefaultText mTop={"10px"} align={"center"} color={secondaryColor} font={"25px"} bolder={"bold"}><span style={{color: props.darkMode ? '#fff' : '#2f2e41'}}>Email: </span> matheusgomes192@hotmail.com</DefaultText>
 
                 <IconDiv>
-                    <IconBall>
-                        <Facebook fill={"#fff"} />
+                    <IconBall background={props.darkMode ? '#fff' : '#2f2e41'}>
+                        <Facebook fill={props.darkMode ? '#2f2e41' : '#fff'} />
                     </IconBall>
-                    <IconBall>
-                        <Instagram fill={'#fff'} />
+                    <IconBall background={props.darkMode ? '#fff' : '#2f2e41'}>
+                        <Instagram fill={props.darkMode ? '#2f2e41' : '#fff'} />
                     </IconBall>
-                    <IconBall>
-                        <Linkedin fill={'#fff'} />
+                    <IconBall background={props.darkMode ? '#fff' : '#2f2e41'}>
+                        <Linkedin fill={props.darkMode ? '#2f2e41' : '#fff'} />
                     </IconBall>
                 </IconDiv>
             </LeftDiv>
 
-            <RightDiv display={props.showContact ? 'flex' : 'none'}>
-                <DefaultText align={"center"} font={"35px"} bolder={"bold"} color={primaryColor}>Fale comigo</DefaultText>
+            <RightDiv background={props.darkMode ? '#3C3A52' : '#f5f5f5'} display={props.showContact ? 'flex' : 'none'}>
+                <DefaultText align={"center"} font={"35px"} bolder={"bold"} color={props.darkMode ? '#fff' : '#2f2e41'}>Fale comigo</DefaultText>
                 <DefaultText mTop={"0px"} align={"center"} font={"30px"} bolder={"bold"} color={secondaryColor}>Apenas para ofertas de trabalhos</DefaultText>
                 <RightCenterDiv>
-                    <Input className={"input1"} placeholder={"Seu nome"} />
-                    <Input className={"input2"} placeholder={"Seu Email"} />
-                    <InputBig className={"input3"} placeholder={"Sua proposta"} />
+                    <Input color={props.darkMode ? '#fff' : '#2f2e41'} background={props.darkMode ? '#2f2e41' : '#fff'} className={"input1"} placeholder={"Seu nome"} />
+                    <Input color={props.darkMode ? '#fff' : '#2f2e41'} background={props.darkMode ? '#2f2e41' : '#fff'} className={"input2"} placeholder={"Seu Email"} />
+                    <InputBig color={props.darkMode ? '#fff' : '#2f2e41'} background={props.darkMode ? '#2f2e41' : '#fff'} className={"input3"} placeholder={"Sua proposta"} />
                     <DefaultBtn className={"input4"}>Enviar Mensagem</DefaultBtn>
                 </RightCenterDiv>
             </RightDiv>
