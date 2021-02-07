@@ -5,6 +5,7 @@ export const MainDiv = styled.footer`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #2f2e41;
+    background-color: ${props=>props.background};
     height: 120px;
+    transition: 500ms;
 `;

@@ -281,7 +281,7 @@ export default () => {
                 <ContactComponent darkMode={darkMode} showContact={showContact}/>
             </div>
 
-            <FooterComponent/>
+            <FooterComponent darkMode={darkMode}/>
         </Container>
 
     );
