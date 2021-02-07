@@ -55,6 +55,7 @@ export default () => {
     const [sectionContact, setSectionContact] = useState(false);
 
     const [darkMode, setDarkMode] = useState(false);
+    const [lightMode, setLightMode] = useState(true);
     const [darkModeDiv, setDarkModeDiv] = useState(false);
 
     const DefaultBtn = withStyles(() => ({
@@ -80,7 +81,7 @@ export default () => {
 
     const DarkModeBtn = withStyles(() => ({
         root: {
-            backgroundColor: '#2f2e41',
+            backgroundColor: backgroundColor,
             padding: 20,
             fontSize: 16,
             height: 50,
@@ -178,31 +179,33 @@ export default () => {
             setDarkMode(true);
             setBackgroundColor('#fff');
             setFontColor('#2f2e41');
+            setLightMode(false);
     }
 
     const handleLightMode = () => {
-            setDarkMode(false);
+            setLightMode(true);
             setBackgroundColor('#2f2e41');
             setFontColor('#fff');
+            setDarkMode(false);
     }
 
     return (
         <Container>
             <Header id={"home"}>
                 <DarkModeBtn onClick={() => setDarkModeDiv(true)}>
-                    <Dots />
+                    <Dots fill={fontColor}/>
                 </DarkModeBtn>
 
-                <DarkModeDiv display={darkModeDiv ? 'flex' : 'none'}>
-                    <DefaultText mTop={"0"} color={"#fff"} weight={"bold"} align={"center"} font={"22px"}>Modo</DefaultText>
-                    <DarkModeDivInside onClick={handleLightMode} background={darkMode ? 'transparent' : '#fff'}>
-                        <Sun fill={darkMode ? '#fff' : '#2f2e41'}/>
-                        <DefaultText style={{marginLeft: 20}} font={"20px"} align={"center"} color={darkMode ? '#fff' : '#2f2e41'} mTop={"0"}>Light Mode</DefaultText>
+                <DarkModeDiv background={backgroundColor} display={darkModeDiv ? 'flex' : 'none'}>
+                    <DefaultText mTop={"0"} color={fontColor} weight={"bold"} align={"center"} font={"22px"}>Modo</DefaultText>
+                    <DarkModeDivInside bdColor={fontColor} onClick={handleLightMode} background={lightMode ? fontColor : 'transparent'}>
+                        <Sun fill={"#2f2e41"}/>
+                        <DefaultText style={{marginLeft: 20}} font={"20px"} align={"center"} color={'#2f2e41'} mTop={"0"}>Light Mode</DefaultText>
                     </DarkModeDivInside>
 
-                    <DarkModeDivInside onClick={handleDarkMode} background={darkMode ? '#fff' : 'transparent'}>
-                        <Moon fill={darkMode ? '#2f2e41' : '#fff'}/>
-                        <DefaultText style={{marginLeft: 20}} font={"20px"} color={darkMode ? '#2f2e41' : '#fff'} mTop={"0"}>Dark Mode</DefaultText>
+                    <DarkModeDivInside bdColor={fontColor} onClick={handleDarkMode} background={darkMode ? fontColor : 'transparent'}>
+                        <Moon fill={'#fff'}/>
+                        <DefaultText style={{marginLeft: 20}} font={"20px"} color={'#fff'} mTop={"0"}>Dark Mode</DefaultText>
                     </DarkModeDivInside>
                 </DarkModeDiv>
 

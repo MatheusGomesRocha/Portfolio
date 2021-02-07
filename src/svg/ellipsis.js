@@ -1,6 +1,6 @@
-export default () => {
+export default (props) => {
     return (
-        <svg fill="#fff" height="25px" viewBox="0 -192 512 512" width="25px" xmlns="http://www.w3.org/2000/svg">
+        <svg fill={props.fill} height="25px" viewBox="0 -192 512 512" width="25px" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="m320 64c0 35.347656-28.652344 64-64 64s-64-28.652344-64-64 28.652344-64 64-64 64 28.652344 64 64zm0 0"/>
             <path

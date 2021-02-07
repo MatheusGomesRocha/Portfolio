@@ -14,7 +14,7 @@ export const DarkModeDiv = styled.div`
     bottom: 85px;
     right: 25px;
     z-index: 999;
-    background-color: #2f2e41;
+    background-color: ${props=>props.background};
     width: 200px;
     height: 200px;
     border-radius: 10px;
@@ -33,12 +33,13 @@ export const DarkModeDivInside = styled.div`
     margin-top: 10px;
     border-radius: 10px;
     padding: 0 10px;
-    border: 1px solid #2f2e41;
+    border: 1px solid transparent;
     transition: 500ms;
     
     :hover {
         cursor: pointer;
-        border: 1px solid #fff;
+        border: 1px solid;
+        border-color: ${props=>props.bdColor};
     }
 `;
 
