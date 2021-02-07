@@ -7,6 +7,8 @@ export const MainDiv = styled.div`
     justify-content: center;
     padding-top: 50px;
     height: 751px;
+    background-color: ${props=>props.background};
+    transition: 500ms;
 `;
 export const GridDiv = styled.div`
     display: grid;
@@ -17,7 +19,6 @@ export const GridDiv = styled.div`
     padding: 40px 120px;
 `;
 export const ItemDiv = styled.div`
-    background-color: #fff;
     border: 1px solid #999;
     border-radius: 10px;
     display: ${props=>props.display};
@@ -38,13 +39,10 @@ export const RowDiv = styled.div`
 export const SvgDiv = styled.div`
     width: 65px;
     height: 50px;
-    background-color: #2f2e41;
+    background-color: ${props=>props.background};
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 20px;
-`;
-export const Svg = styled.img`
-    width: 25px;
-    height: 25px;
+    transition: 500ms;
 `;

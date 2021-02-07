@@ -266,7 +266,7 @@ export default () => {
 
             <div id={"benefits"}>
                 <BenefitsComponent display={displayBlock} display2={displayBlock2} display3={displayBlock3}
-                                   display4={displayBlock4}/>
+                                   display4={displayBlock4} darkMode={darkMode}/>
             </div>
 
             <div id={"infos"}>

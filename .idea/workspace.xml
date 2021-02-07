@@ -5,8 +5,12 @@
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppStyled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppStyled.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/svg/ellipsis.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/ellipsis.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BenefitsComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BenefitsComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BenefitsStyled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BenefitsStyled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/lighting.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/lighting.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/menu.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/resize.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/resize.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/search.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/search.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +90,8 @@
       <workItem from="1612638502059" duration="3573000" />
       <workItem from="1612651682683" duration="3059000" />
       <workItem from="1612708231057" duration="2934000" />
-      <workItem from="1612720801991" duration="1208000" />
+      <workItem from="1612720801991" duration="1347000" />
+      <workItem from="1612724711771" duration="1242000" />
     </task>
     <servers />
   </component>
