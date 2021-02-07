@@ -274,7 +274,7 @@ export default () => {
             </div>
 
             <div id={"works"}>
-                <WorksComponent/>
+                <WorksComponent darkMode={darkMode}/>
             </div>
 
             <div id={"contact"}>

@@ -36,19 +36,17 @@ const DefaultBtn = withStyles(() => ({
     },
 }))(Button);
 
-export default () => {
-    let primaryColor = '#2f2e41';
-    let secondaryColor = '#999';
+export default (props) => {
 
     const [hoverWork1, setHoverWork1] = useState(false);
     const [hoverWork2, setHoverWork2] = useState(false);
 
     return (
-        <MainDiv>
-            <DefaultText mTop={"0"} align={"center"} bolder={"bold"} font={"40px"} color={primaryColor}>
+        <MainDiv background={props.darkMode ? '#2f2e41' : '#fff'}>
+            <DefaultText mTop={"0"} align={"center"} bolder={"bold"} font={"40px"} color={props.darkMode ? '#fff' : '#2f2e41'}>
                 Meus trabalhos recentes
             </DefaultText>
-            <DefaultText mTop={"0"} align={"center"} font={"25px"} color={secondaryColor}>
+            <DefaultText mTop={"0"} align={"center"} font={"25px"} color={'#999'}>
                 Uma pequena amostra dos meus trabalhos
             </DefaultText>
 

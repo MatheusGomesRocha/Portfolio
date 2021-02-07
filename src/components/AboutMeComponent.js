@@ -80,7 +80,7 @@ export default (props) => {
 
             <BlockDiv>
                 {array.map((item, k) => (
-                    <ItemDiv background={props.darkMode ? '#3C3A52' : '#fff'} key={k} bLeft={item.bLeft ? '1px solid #999' : null} rightTop={item.bRight ? '10px' : null} rightBottom={item.bRight ? '10px' : null} leftTop={item.bLeft ? '10px' : null} leftBottom={item.bLeft ? '10px' : null}>
+                    <ItemDiv background={props.darkMode ? '#2f2e41' : '#fff'} key={k} bLeft={item.bLeft ? '1px solid #999' : null} rightTop={item.bRight ? '10px' : null} rightBottom={item.bRight ? '10px' : null} leftTop={item.bLeft ? '10px' : null} leftBottom={item.bLeft ? '10px' : null}>
                         <BlockTopDiv>
                             <Svg src={item.svg} width={80} height={80} fill={"#845EC2"}/>
 

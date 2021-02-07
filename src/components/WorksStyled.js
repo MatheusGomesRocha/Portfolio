@@ -6,6 +6,7 @@ export const MainDiv = styled.div`
     align-items: center;
     padding-top: 150px;
     padding-bottom: 200px;
+    background-color: ${props=>props.background};
 `;
 export const GridDiv = styled.div`
     display: grid;
