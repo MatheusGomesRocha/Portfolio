@@ -4,7 +4,8 @@ export const MainDiv = styled.div`
     display: flex;
     flex-direction: column;
     padding-top: 50px;
-    background-color: #fff;
+    background-color: ${props=>props.background};
+    transition: 500ms;
 `;
 export const GridTopDiv = styled.div`
     display: grid;

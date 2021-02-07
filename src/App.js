@@ -192,7 +192,7 @@ export default () => {
     return (
         <Container>
             <Header id={"home"}>
-                <DarkModeBtn onClick={() => setDarkModeDiv(true)}>
+                <DarkModeBtn onClick={() => setDarkModeDiv(!darkModeDiv)}>
                     <Dots fill={fontColor}/>
                 </DarkModeBtn>
 
@@ -270,7 +270,7 @@ export default () => {
             </div>
 
             <div id={"infos"}>
-                <MoreInfoComponent showMoreInfo={showMoreInfo}/>
+                <MoreInfoComponent darkMode={darkMode} showMoreInfo={showMoreInfo}/>
             </div>
 
             <div id={"works"}>

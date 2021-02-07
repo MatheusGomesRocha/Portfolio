@@ -23,35 +23,35 @@ export default (props) => {
     const [hover4, setHover4] = useState(false);
 
     return (
-        <MainDiv>
+        <MainDiv background={props.darkMode ? '#2f2e41' : '#fff'}>
 
-            <DefaultText align={"center"} font={"40px"} bolder={"bold"} color={"#2f2e41"} >Minhas especialidades</DefaultText>
+            <DefaultText align={"center"} font={"40px"} bolder={"bold"} color={props.darkMode ? '#fff' : '#2f2e41'} >Minhas especialidades</DefaultText>
             <DefaultText mTop={"0"} align={"center"} font={"25px"} color={"#999"} >Algumas de minhas habilidades</DefaultText>
 
             <GridTopDiv>
                 <ItemCircleDiv>
                     <CircleProgressBar1 />
-                    <DefaultText mTop={"-10px"} color={"#2f2e41"} font={"25px"} align={"center"}>Back-end</DefaultText>
+                    <DefaultText mTop={"-10px"} color={props.darkMode ? "#fff" : '#2f2e41'} font={"25px"} align={"center"}>Back-end</DefaultText>
                 </ItemCircleDiv>
 
                 <ItemCircleDiv>
                     <CircleProgressBar2 />
-                    <DefaultText mTop={"-10px"} color={"#2f2e41"} font={"25px"} align={"center"}>Front-end</DefaultText>
+                    <DefaultText mTop={"-10px"} color={props.darkMode ? "#fff" : '#2f2e41'} font={"25px"} align={"center"}>Front-end</DefaultText>
                 </ItemCircleDiv>
 
                 <ItemCircleDiv>
                     <CircleProgressBar3 />
-                    <DefaultText mTop={"-10px"} color={"#2f2e41"} font={"25px"} align={"center"}>Mobile</DefaultText>
+                    <DefaultText mTop={"-10px"} color={props.darkMode ? "#fff" : '#2f2e41'} font={"25px"} align={"center"}>Mobile</DefaultText>
                 </ItemCircleDiv>
 
                 <ItemCircleDiv>
                     <CircleProgressBar4 />
-                    <DefaultText mTop={"-10px"} color={"#2f2e41"} font={"25px"} align={"center"}>Performance</DefaultText>
+                    <DefaultText mTop={"-10px"} color={props.darkMode ? "#fff" : '#2f2e41'} font={"25px"} align={"center"}>Performance</DefaultText>
                 </ItemCircleDiv>
 
                 <ItemCircleDiv>
                     <CircleProgressBar5 />
-                    <DefaultText mTop={"-10px"} color={"#2f2e41"} font={"25px"} align={"center"}>Expriência do usuário</DefaultText>
+                    <DefaultText mTop={"-10px"} color={props.darkMode ? "#fff" : '#2f2e41'} font={"25px"} align={"center"}>Expriência do usuário</DefaultText>
                 </ItemCircleDiv>
             </GridTopDiv>
 
@@ -86,7 +86,7 @@ export default (props) => {
                         null
                     }
 
-                    <DefaultText color={"#2f2e41"} align={"center"} bolder={"bold"} font={"25px"} mTop={"10px"}>Copos de
+                    <DefaultText color={props.darkMode ? "#fff" : '#2f2e41'} align={"center"} bolder={"bold"} font={"25px"} mTop={"10px"}>Copos de
                         café</DefaultText>
                 </BlockDiv>
 
@@ -120,7 +120,7 @@ export default (props) => {
                         null
                     }
 
-                    <DefaultText color={"#2f2e41"} align={"center"} bolder={"bold"} font={"25px"} mTop={"10px"}>Projetos
+                    <DefaultText color={props.darkMode ? "#fff" : '#2f2e41'} align={"center"} bolder={"bold"} font={"25px"} mTop={"10px"}>Projetos
                         completados</DefaultText>
                 </BlockDiv>
             </GridDiv>
