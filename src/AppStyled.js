@@ -95,7 +95,3 @@ export const HeaderLeft = styled.div`
     height: 250px;
     padding: 10px 0;
 `;
-export const HeaderImg = styled.img`
-    width: 750px;
-    height: 650px;
-`;

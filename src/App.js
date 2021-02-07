@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import './App.css'
 import Typist from 'react-typist';
-import Header_img from './header_img.svg';
+import Header_img from './header_img';
 import Dots from './svg/ellipsis';
 import Sun from './svg/sun';
 import Moon from './svg/moon';
@@ -25,7 +25,6 @@ import {
     HeaderLink,
     HeaderBottom,
     HeaderLeft,
-    HeaderImg,
 } from './AppStyled';
 
 import AboutMeComponent from "./components/AboutMeComponent";
@@ -234,18 +233,18 @@ export default () => {
                 <HeaderBottom>
                     <HeaderLeft>
                         <Typist>
-                            <DefaultText font={'30px'} color={fontColor}>Olá,</DefaultText>
+                            <DefaultText font={'30px'} color={'#fff'}>Olá,</DefaultText>
                             <br/>
-                            <DefaultText font={'40px'} color={backgroundColor} bolder={"bold"}>Meu nome é <br/> Matheus
+                            <DefaultText font={'40px'} color={'f2f2f2'} bolder={"bold"}>Meu nome é <br/> Matheus
                                 Gomes</DefaultText>
                             <br/>
-                            <DefaultText font={'30px'} color={fontColor}>Bem vindo ao meu portfólio</DefaultText>
+                            <DefaultText font={'30px'} color={'#fff'}>Bem vindo ao meu portfólio</DefaultText>
                         </Typist>
 
                         <DefaultBtn> Vamos Começar </DefaultBtn>
                     </HeaderLeft>
 
-                    <HeaderImg src={Header_img}/>
+                    <Header_img fillTop={darkMode ? '#3C3A52' : '#f2f2f2'} fillAngle={darkMode ? '#fff' : '#2f2e41'} fillBig={darkMode ? '#2f2e41' : '#fff'}/>
                 </HeaderBottom>
 
 
