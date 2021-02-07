@@ -1,4 +1,3 @@
-import {useState, useEffect} from "react";
 import {DefaultText} from './DefaultText';
 import Back from '../svg/back.svg';
 import Mobile from '../svg/mobile.svg';
@@ -9,24 +8,12 @@ import {
     TopDiv,
     BlockDiv,
     ItemDiv,
+    BlockTopDiv,
     Svg,
-    BlockBottomDiv, BlockTopDiv,
+    BlockBottomDiv,
 } from './AboutMeStyled';
 
 export default (props) => {
-    const [backgroundColor, setBackgroundColor] = useState('#2f2e41');
-    const [fontColor, setFontColor] = useState('#666');
-
-    useEffect(() => {
-        if(props.darkMode) {
-            setBackgroundColor('#2f2e41');
-            setFontColor('#bbb');
-        } else {
-            setBackgroundColor('#fff');
-            setFontColor('#2f2e41');
-        }
-    }, [props.darkMode]);
-
     let array = [
         {
             id: 1,
@@ -64,12 +51,12 @@ export default (props) => {
 
     return (
         <MainDiv>
-            <TopDiv background={backgroundColor}>
+            <TopDiv background={props.darkMode ? '#2f2e41' : '#fff'}>
                 <DefaultText mTop={"30px"} color={props.darkMode ? '#fff' : '#2f2e41'} align={"center"} bolder={"bold"} font={"25px"}>
                     Meu nome é Matheus, e sou um desenvolvedor Full-Stack em formação
                 </DefaultText>
 
-                <DefaultText width={"75%"} font={"22px"} align={"center"} color={fontColor}>
+                <DefaultText width={"75%"} font={"22px"} align={"center"} color={props.darkMode ? '#fff' : '#2f2e41'}>
                     Oi, tenho 19 anos e estou na área de programação à 2 anos. Comecei quando iniciei a faculdade de
                     Análise
                     e Desenvolvimento de Sistemas, a qual estou no 5º semestre. Não tenho nenhuma experiência
@@ -84,9 +71,9 @@ export default (props) => {
                         <BlockTopDiv>
                             <Svg src={item.svg} width={80} height={80} fill={"#845EC2"}/>
 
-                            <DefaultText color={props.darkMode ? ' #fff' : '#2f2e41'} font={"18px"} align={"center"} bolder={"bold"}>{item.title}</DefaultText>
+                            <DefaultText color={props.darkMode ? ' #fff' : '#2f2e41'} font={"20px"} align={"center"} bolder={"bold"}>{item.title}</DefaultText>
 
-                            <DefaultText style={{height: 120}} font={"18px"} color={fontColor} align={"center"}> {item.content} </DefaultText>
+                            <DefaultText style={{height: 120}} font={"18px"} color={props.darkMode ? ' #fff' : '#2f2e41'} align={"center"}> {item.content} </DefaultText>
                         </BlockTopDiv>
 
                         <BlockBottomDiv>
@@ -94,7 +81,7 @@ export default (props) => {
                                 {item.subtitle}
                             </DefaultText>
 
-                            <DefaultText font={"18px"} style={{whiteSpace: 'pre-wrap'}} align={"center"} bolder={"bold"} color={fontColor}>
+                            <DefaultText font={"18px"} style={{whiteSpace: 'pre-wrap'}} align={"center"} bolder={"bold"} color={props.darkMode ? '#fff' : '#2f2e41'}>
                                 {item.languages}
                             </DefaultText>
                         </BlockBottomDiv>
