@@ -36,8 +36,8 @@ import ContactComponent from "./components/ContactComponent";
 import FooterComponent from "./components/FooterComponent";
 
 export default () => {
-    const [primaryColor, setPrimaryColor] = useState('#2f2e41');
-    const [secondaryColor, setSecondaryColor] = useState('#fff');
+    const [backgroundColor, setBackgroundColor] = useState('#2f2e41');
+    const [fontColor, setFontColor] = useState('#fff');
 
     const [displayBlock, setDisplayBlock] = useState(false);
     const [displayBlock2, setDisplayBlock2] = useState(false);
@@ -174,10 +174,16 @@ export default () => {
         };
     }, [])
 
-    const handleDarkMode = (value) => {
+    const handleDarkMode = () => {
             setDarkMode(true);
-            setPrimaryColor('#fff');
-            setSecondaryColor('#2f2e41');
+            setBackgroundColor('#fff');
+            setFontColor('#2f2e41');
+    }
+
+    const handleLightMode = () => {
+            setDarkMode(false);
+            setBackgroundColor('#2f2e41');
+            setFontColor('#fff');
     }
 
     return (
@@ -189,7 +195,7 @@ export default () => {
 
                 <DarkModeDiv display={darkModeDiv ? 'flex' : 'none'}>
                     <DefaultText mTop={"0"} color={"#fff"} weight={"bold"} align={"center"} font={"22px"}>Modo</DefaultText>
-                    <DarkModeDivInside onClick={() => setDarkMode(false)} background={darkMode ? 'transparent' : '#fff'}>
+                    <DarkModeDivInside onClick={handleLightMode} background={darkMode ? 'transparent' : '#fff'}>
                         <Sun fill={darkMode ? '#fff' : '#2f2e41'}/>
                         <DefaultText style={{marginLeft: 20}} font={"20px"} align={"center"} color={darkMode ? '#fff' : '#2f2e41'} mTop={"0"}>Light Mode</DefaultText>
                     </DarkModeDivInside>
@@ -202,22 +208,22 @@ export default () => {
 
                 <HeaderTopHidden display={fixedHeader ? 'flex' : 'none'}></HeaderTopHidden>
 
-                <HeaderTop background={fixedHeader && primaryColor || fixedHeader && darkMode && primaryColor} position={fixedHeader && 'fixed'}>
+                <HeaderTop background={fixedHeader && backgroundColor || fixedHeader && darkMode && backgroundColor} position={fixedHeader && 'fixed'}>
 
                     <HeaderLink href="#home">Home</HeaderLink>
 
                     <HeaderLinkDiv>
-                        <HeaderLink color={sectionHome ? '#FF5E62' : '#fff'} href="#home">Home</HeaderLink>
+                        <HeaderLink color={sectionHome && '#FF5E62' || fixedHeader && fontColor} href="#home">Home</HeaderLink>
 
-                        <HeaderLink color={sectionAbout ? '#FF5E62' : '#fff'} href="#about">Sobre</HeaderLink>
+                        <HeaderLink color={sectionAbout && '#FF5E62' || fixedHeader && fontColor} href="#about">Sobre</HeaderLink>
 
-                        <HeaderLink color={sectionBenefits ? '#FF5E62' : '#fff'} href="#benefits">Benefícios</HeaderLink>
+                        <HeaderLink color={sectionBenefits && '#FF5E62' || fixedHeader && fontColor} href="#benefits">Benefícios</HeaderLink>
 
-                        <HeaderLink color={sectionInfos ? '#FF5E62' : '#fff'} href="#infos">Infos</HeaderLink>
+                        <HeaderLink color={sectionInfos && '#FF5E62' || fixedHeader && fontColor} href="#infos">Infos</HeaderLink>
 
-                        <HeaderLink color={sectionWorks ? '#FF5E62' : '#fff'} href="#works">Trabalhos</HeaderLink>
+                        <HeaderLink color={sectionWorks && '#FF5E62' || fixedHeader && fontColor} href="#works">Trabalhos</HeaderLink>
 
-                        <HeaderLink color={sectionContact ? '#FF5E62' : '#fff'} href="#contact">Contato</HeaderLink>
+                        <HeaderLink color={sectionContact && '#FF5E62' || fixedHeader && fontColor} href="#contact">Contato</HeaderLink>
                     </HeaderLinkDiv>
 
                 </HeaderTop>
@@ -225,12 +231,12 @@ export default () => {
                 <HeaderBottom>
                     <HeaderLeft>
                         <Typist>
-                            <DefaultText font={'30px'} color={secondaryColor}>Olá,</DefaultText>
+                            <DefaultText font={'30px'} color={fontColor}>Olá,</DefaultText>
                             <br/>
-                            <DefaultText font={'40px'} color={primaryColor} bolder={"bold"}>Meu nome é <br/> Matheus
+                            <DefaultText font={'40px'} color={backgroundColor} bolder={"bold"}>Meu nome é <br/> Matheus
                                 Gomes</DefaultText>
                             <br/>
-                            <DefaultText font={'30px'} color={secondaryColor}>Bem vindo ao meu portfólio</DefaultText>
+                            <DefaultText font={'30px'} color={fontColor}>Bem vindo ao meu portfólio</DefaultText>
                         </Typist>
 
                         <DefaultBtn> Vamos Começar </DefaultBtn>
@@ -243,16 +249,16 @@ export default () => {
             </Header>
 
             <div className="custom-shape-divider-bottom-1612379057">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                <svg  data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                      preserveAspectRatio="none">
                     <path
                         d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-                        className="shape-fill"></path>
+                        className="shape-fill" fill={darkMode ? '#2f2e41' : '#fff'} style={{transition: '500ms'}}></path>
                 </svg>
             </div>
 
             <div id={"about"}>
-                <AboutMeComponent/>
+                <AboutMeComponent darkMode={darkMode}/>
             </div>
 
             <div id={"benefits"}>
@@ -276,4 +282,6 @@ export default () => {
         </Container>
 
     );
+
+
 }

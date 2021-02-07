@@ -76,7 +76,7 @@ export const HeaderLink = styled.a`
     transition: 250ms;
     text-decoration: none;
     margin-left: 30px;
-    color: ${props=>props.color};
+    color: ${props=>props.color || '#fff'};
     
     :hover {
         color: #FF5E62;

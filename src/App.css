@@ -19,7 +19,7 @@ html {
 }
 
 .custom-shape-divider-bottom-1612379057 .shape-fill {
-    fill: #FFFFFF;
+    transition: 500ms;
 }
 
 /** For tablet devices **/

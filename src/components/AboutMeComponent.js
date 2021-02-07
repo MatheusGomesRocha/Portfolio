@@ -1,5 +1,5 @@
+import {useState, useEffect} from "react";
 import {DefaultText} from './DefaultText';
-
 import Back from '../svg/back.svg';
 import Mobile from '../svg/mobile.svg';
 import Front from '../svg/front.svg';
@@ -13,9 +13,19 @@ import {
     BlockBottomDiv, BlockTopDiv,
 } from './AboutMeStyled';
 
-export default () => {
-    let primaryColor = '#2f2e41';
-    let secondaryColor = '#666';
+export default (props) => {
+    const [backgroundColor, setBackgroundColor] = useState('#2f2e41');
+    const [fontColor, setFontColor] = useState('#666');
+
+    useEffect(() => {
+        if(props.darkMode) {
+            setBackgroundColor('#2f2e41');
+            setFontColor('#bbb');
+        } else {
+            setBackgroundColor('#fff');
+            setFontColor('#2f2e41');
+        }
+    }, [props.darkMode]);
 
     let array = [
         {
@@ -54,12 +64,12 @@ export default () => {
 
     return (
         <MainDiv>
-            <TopDiv>
-                <DefaultText mTop={"30px"} color={'#2f2e41'} align={"center"} bolder={"bold"} font={"25px"}>
+            <TopDiv background={backgroundColor}>
+                <DefaultText mTop={"30px"} color={props.darkMode ? '#fff' : '#2f2e41'} align={"center"} bolder={"bold"} font={"25px"}>
                     Meu nome é Matheus, e sou um desenvolvedor Full-Stack em formação
                 </DefaultText>
 
-                <DefaultText width={"75%"} font={"22px"} align={"center"} color={secondaryColor}>
+                <DefaultText width={"75%"} font={"22px"} align={"center"} color={fontColor}>
                     Oi, tenho 19 anos e estou na área de programação à 2 anos. Comecei quando iniciei a faculdade de
                     Análise
                     e Desenvolvimento de Sistemas, a qual estou no 5º semestre. Não tenho nenhuma experiência
@@ -70,13 +80,13 @@ export default () => {
 
             <BlockDiv>
                 {array.map((item, k) => (
-                    <ItemDiv key={k} bLeft={item.bLeft ? '1px solid #999' : null} rightTop={item.bRight ? '10px' : null} rightBottom={item.bRight ? '10px' : null} leftTop={item.bLeft ? '10px' : null} leftBottom={item.bLeft ? '10px' : null}>
+                    <ItemDiv background={props.darkMode ? '#3C3A52' : '#fff'} key={k} bLeft={item.bLeft ? '1px solid #999' : null} rightTop={item.bRight ? '10px' : null} rightBottom={item.bRight ? '10px' : null} leftTop={item.bLeft ? '10px' : null} leftBottom={item.bLeft ? '10px' : null}>
                         <BlockTopDiv>
                             <Svg src={item.svg} width={80} height={80} fill={"#845EC2"}/>
 
-                            <DefaultText color={primaryColor} font={"18px"} align={"center"} bolder={"bold"}>{item.title}</DefaultText>
+                            <DefaultText color={props.darkMode ? ' #fff' : '#2f2e41'} font={"18px"} align={"center"} bolder={"bold"}>{item.title}</DefaultText>
 
-                            <DefaultText style={{height: 120}} font={"18px"} color={secondaryColor} align={"center"}> {item.content} </DefaultText>
+                            <DefaultText style={{height: 120}} font={"18px"} color={fontColor} align={"center"}> {item.content} </DefaultText>
                         </BlockTopDiv>
 
                         <BlockBottomDiv>
@@ -84,7 +94,7 @@ export default () => {
                                 {item.subtitle}
                             </DefaultText>
 
-                            <DefaultText font={"18px"} style={{whiteSpace: 'pre-wrap'}} align={"center"} bolder={"bold"} color={primaryColor}>
+                            <DefaultText font={"18px"} style={{whiteSpace: 'pre-wrap'}} align={"center"} bolder={"bold"} color={fontColor}>
                                 {item.languages}
                             </DefaultText>
                         </BlockBottomDiv>

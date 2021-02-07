@@ -8,4 +8,5 @@ export const DefaultText = styled.span`
     width: ${props=>props.width || '100%'};
     text-align: ${props=>props.align || 'left'};
     margin-top: ${props=>props.mTop || '20px'};
+    transition: 500ms;
 `;
