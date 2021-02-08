@@ -20,7 +20,7 @@ export default (props) => {
             <DefaultText align={"center"} color={props.darkMode ? '#fff' : '#2f2e41'} font={"40px"} bolder={"bold"}>Benefícios de trabalhar comigo</DefaultText>
             <GridDiv>
                 <ItemDiv display={props.display ? 'flex' : 'none'} className={"item1"}>
-                    <DefaultText font={"25px"} color={props.darkMode ? '#fff' : '#2f2e41'} bolder={"bold"}>O básico</DefaultText>
+                    <DefaultText mTop={"0"} font={"25px"} color={props.darkMode ? '#fff' : '#2f2e41'} bolder={"bold"}>O básico</DefaultText>
                     <RowDiv>
                         <SvgDiv background={props.darkMode ? '#fff' : '#2f2e41'}>
                             <Responsive fill={props.darkMode ? '#2f2e41' : '#fff'}/>

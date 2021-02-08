@@ -1,5 +1,6 @@
 import {useEffect, useState} from "react";
 import './App.css'
+import {useMediaQuery} from "react-responsive";
 import Typist from 'react-typist';
 import Header_img from './header_img';
 import Dots from './svg/ellipsis';
@@ -61,6 +62,10 @@ export default () => {
     const [lightMode, setLightMode] = useState(true);                       // Se não está no DarkMode, que começa como verdadeiro
     const [darkModeDiv, setDarkModeDiv] = useState(false);                  // Mostra a div com a opção de escolher o modo Dark ou Light
 
+    const isMobile = useMediaQuery({                                     // 18 - Da uma largura para mobile devices
+        query: '(max-width: 800px)'
+    });
+
     const DefaultBtn = withStyles(() => ({          // Botão padrão "VAMOS COMEÇAR"
         root: {
             backgroundColor: '#2f2e41',
@@ -69,7 +74,8 @@ export default () => {
             height: 50,
             marginTop: 30,
             borderRadius: 10,
-            width: '60%',
+            width: isMobile ? '80%' : '60%',
+            fontFamily: 'candara',
             color: '#fff',
             display: 'flex',
             alignItems: 'center',
@@ -84,7 +90,7 @@ export default () => {
 
     const DarkModeBtn = withStyles(() => ({         // Botão fixado no bottom right com o "..."
         root: {
-            backgroundColor: backgroundColor,
+            backgroundColor: darkMode ? '#fff' : '#2f2e41',
             padding: 20,
             fontSize: 16,
             height: 50,
@@ -99,6 +105,7 @@ export default () => {
             justifyContent: 'center',
             transition: '500ms',
             zIndex: 999,
+            border: darkMode ? '1px solid #2f2e41' : '1px solid #fff',
 
             '&:hover': {
                 backgroundColor: '#FF5E62',
@@ -200,21 +207,21 @@ export default () => {
             <Header id={"home"}>
                 {/*Botão para abrir div e escolher modo*/}
                 <DarkModeBtn onClick={() => setDarkModeDiv(!darkModeDiv)}>
-                    <Dots fill={fontColor}/>
+                    <Dots fill={darkMode ? '#2f2e41' : '#fff'}/>
                 </DarkModeBtn>
 
                 {/*Div para escolher modo*/}
-                <DarkModeDiv background={backgroundColor} display={darkModeDiv ? 'flex' : 'none'}>
-                    <DefaultText mTop={"0"} color={fontColor} weight={"bold"} align={"center"}
+                <DarkModeDiv background={darkMode ? '#fff' : '#2f2e41'} display={darkModeDiv ? 'flex' : 'none'}>
+                    <DefaultText mTop={"0"} color={darkMode ? '#2f2e41' : '#fff'} weight={"bold"} align={"center"}
                                  font={"22px"}>Modo</DefaultText>
-                    <DarkModeDivInside bdColor={fontColor} onClick={handleLightMode}
-                                       background={lightMode ? fontColor : 'transparent'}>
+                    <DarkModeDivInside bdColor={darkMode ? '#2f2e41' : '#fff'} onClick={handleLightMode}
+                                       background={lightMode ? '#fff' : 'transparent'}>
                         <Sun fill={"#2f2e41"}/>
                         <DefaultText style={{marginLeft: 20}} font={"20px"} align={"center"} color={'#2f2e41'}
                                      mTop={"0"}>Light Mode</DefaultText>
                     </DarkModeDivInside>
 
-                    <DarkModeDivInside bdColor={fontColor} onClick={handleDarkMode}
+                    <DarkModeDivInside bdColor={darkMode ? '#2f2e41' : '#fff'} onClick={handleDarkMode}
                                        background={darkMode ? fontColor : 'transparent'}>
                         <Moon fill={'#fff'}/>
                         <DefaultText style={{marginLeft: 20}} font={"20px"} color={'#fff'} mTop={"0"}>Dark
@@ -257,18 +264,21 @@ export default () => {
                 <HeaderBottom>
                     <HeaderLeft>
                         <Typist>
-                            <DefaultText font={'30px'} color={'#fff'}>Olá,</DefaultText>
+                            <DefaultText font={isMobile ? '25px' : '30px'} color={'#fff'}>Olá,</DefaultText>
                             <br/>
-                            <DefaultText font={'40px'} color={'f2f2f2'} bolder={"bold"}>Meu nome é <br/> Matheus
+                            <DefaultText font={isMobile ? '30px' : '40px'} color={'f2f2f2'} bolder={"bold"}>Meu nome
+                                é <br/> Matheus
                                 Gomes</DefaultText>
                             <br/>
-                            <DefaultText font={'30px'} color={'#fff'}>Bem vindo ao meu portfólio</DefaultText>
+                            <DefaultText font={isMobile ? '25px' : '30px'} color={'#fff'}>Bem vindo ao meu
+                                portfólio</DefaultText>
                         </Typist>
 
                         <DefaultBtn> Vamos Começar </DefaultBtn>
                     </HeaderLeft>
 
-                    <Header_img fillTop={darkMode ? '#3C3A52' : '#f2f2f2'} fillAngle={darkMode ? '#fff' : '#2f2e41'}
+                    <Header_img mobile={isMobile} fillTop={darkMode ? '#3C3A52' : '#f2f2f2'}
+                                fillAngle={darkMode ? '#fff' : '#2f2e41'}
                                 fillBig={darkMode ? '#2f2e41' : '#fff'}/>
                 </HeaderBottom>
 
@@ -276,16 +286,19 @@ export default () => {
             </Header>
 
             {/*Wave abaixo do Header*/}
-            <div className="custom-shape-divider-bottom-1612379057">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                     preserveAspectRatio="none">
-                    <path
-                        d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-                        className="shape-fill" fill={darkMode ? '#2f2e41' : '#fff'}
-                        style={{transition: '500ms'}}></path>
-                </svg>
-            </div>
-
+            {isMobile ?
+                    null
+                :
+                <div className="custom-shape-divider-bottom-1612379057">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                         preserveAspectRatio="none">
+                        <path
+                            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                            className="shape-fill" fill={darkMode ? '#2f2e41' : '#fff'}
+                            style={{transition: '500ms'}}></path>
+                    </svg>
+                </div>
+            }
             <div id={"about"}>
                 <AboutMeComponent darkMode={darkMode}/>
             </div>

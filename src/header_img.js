@@ -1,7 +1,6 @@
 export default (props) => {
     return(
-        <svg width={"750px"} height={"650px"} id="bb554b9e-b999-4ef3-b2f2-4c0395b94ae2"  xmlns="http://www.w3.org/2000/svg" width="926.62165"
-             height="600.08495" viewBox="0 0 926.62165 600.08495">
+        <svg width={props.mobile ? '300px' : '750px'} height={props.mobile ? '300px' : '650px'} id="bb554b9e-b999-4ef3-b2f2-4c0395b94ae2"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 926.62165 600.08495">
             <circle cx="150.53395" cy="254.87249" r="24.56103" fill="#ffb8b8"/>
             <polygon points="67.543 549.197 73.762 559.763 117.474 540.803 108.295 525.21 67.543 549.197" fill="#ffb8b8"/>
             <path d="M206.09566,694.4297,218.343,715.23658l.0005.00084A15.38605,15.38605,0,0,1,212.888,736.302l-.43091.25362L192.4047,702.48857Z"

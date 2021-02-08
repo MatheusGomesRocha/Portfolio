@@ -8,4 +8,6 @@ export const MainDiv = styled.footer`
     background-color: ${props=>props.background};
     height: 120px;
     transition: 500ms;
+    border-top: 1px solid #999;
+    margin-top: 3px;
 `;

@@ -19,7 +19,8 @@ export const DarkModeDiv = styled.div`
     height: 200px;
     border-radius: 10px;
     padding: 0 10px;
-    
+    border: 1px solid;
+
     @keyframes grow {
         from {width: 0; height: 0;}
         to {width: 200px; height: 200px;}
@@ -49,6 +50,12 @@ export const Header = styled.div`
     padding-bottom: 150px;
     background: linear-gradient(90deg, #ff9966 0%, #ff5e62 100%);  
     height: 80vh;  
+    
+    @media(max-width: 800px) {
+        height: auto;
+        padding-bottom: 0;
+        width: 100%;
+    }
 `;
 export const HeaderTop = styled.div`
     display: flex;
@@ -61,10 +68,18 @@ export const HeaderTop = styled.div`
     top: 0;
     transition: 500ms;
     z-index: 999;
+    
+    @media(max-width: 800px) {
+        display: none;
+    }
 `;
 export const HeaderTopHidden = styled.div`
     display: ${props=>props.display};
     height: 100px;
+    
+    @media(max-width: 800px) {
+        display: none;
+    }
 `;
 export const HeaderLinkDiv = styled.div`
     display: flex;
@@ -89,9 +104,22 @@ export const HeaderBottom = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 0 80px;
+    
+    @media(max-width: 800px) {
+        flex-direction: column;
+        padding: 0 40px;
+    }
 `;
 export const HeaderLeft = styled.div`
     width: 40%;
     height: 250px;
     padding: 10px 0;
+    
+    @media(max-width: 800px) {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 `;

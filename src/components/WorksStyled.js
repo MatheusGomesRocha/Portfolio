@@ -4,9 +4,12 @@ export const MainDiv = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 150px;
-    padding-bottom: 200px;
+    padding: 100px 0;
     background-color: ${props=>props.background};
+    
+    @media(max-width: 800px) {
+        padding: 50px 0;
+    }
 `;
 export const GridDiv = styled.div`
     display: grid;
@@ -15,6 +18,13 @@ export const GridDiv = styled.div`
     margin-top: 100px;
     justify-content: center;
     width: 100%;
+    
+    @media(max-width: 800px) {
+        grid-template-columns: auto;
+        height: auto;
+        width: 90%;
+        margin-top: 100px;
+    }
 `;
 export const BlockDiv = styled.div`
     height: 350px;
@@ -24,10 +34,20 @@ export const BlockDiv = styled.div`
     :hover {
         cursor: pointer;
     }
+    
+    @media(max-width: 800px) {
+        width: 100%;
+        height: 200px;
+    }
 `;
 export const ItemDiv = styled.img`
     height: 350px;
     border-radius: 10px;
+    
+    @media(max-width: 800px) {
+        width: 100%;
+        height: 200px;
+    }
 `;
 export const ItemHiddenDiv = styled.div`
     display: ${props=>props.display};
@@ -46,4 +66,10 @@ export const ItemHiddenDiv = styled.div`
     @keyframes fadeIn{
         from {opacity: 0}
         to {opacity: 1}
+    }
+    
+    @media(max-width: 800px) {
+        width: 100%;
+        height: 200px;
+    }
 `;
