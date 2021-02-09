@@ -12,10 +12,10 @@ export const TopDiv = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: ${props=>props.background};
+    background-color: ${props => props.background};
     transition: 500ms;
     
-     @media(max-width: 800px) {
+    @media(max-width: 800px) {
         margin-top: 30px;
     }
 `;
@@ -37,7 +37,7 @@ export const ItemDiv = styled.div`
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: ${props=>props.background};
+    background-color: ${props => props.background};
     height: 600px;
     width: 25%;
     
@@ -52,13 +52,13 @@ export const ItemDiv = styled.div`
     
     @media(min-width: 801px) and (max-width: 1800px) {
         border-right: 1px solid #999;
-        border-left: ${props=>props.bLeft};
+        border-left: ${props => props.bLeft};
         border-top: 1px solid #999;
         border-bottom: 1px solid #999;
-        border-top-left-radius: ${props=>props.leftTop};
-        border-bottom-left-radius: ${props=>props.leftBottom};
-        border-top-right-radius: ${props=>props.rightTop};
-        border-bottom-right-radius: ${props=>props.rightBottom};
+        border-top-left-radius: ${props => props.leftTop};
+        border-bottom-left-radius: ${props => props.leftBottom};
+        border-top-right-radius: ${props => props.rightTop};
+        border-bottom-right-radius: ${props => props.rightBottom};
         border-bottom: 1px solid #999;
     }
 `;

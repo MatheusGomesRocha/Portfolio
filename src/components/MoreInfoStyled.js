@@ -7,9 +7,13 @@ export const MainDiv = styled.div`
     background-color: ${props => props.background};
     transition: 500ms;
     
-    @media(max-width: 800px) {
+    @media(max-width: 700px) {
         padding: 50px 0;
         border-top: 1px solid #999;
+    }
+    
+    @media(min-width: 701px) and (max-width: 1050px) {
+        align-items: center;
     }
 `;
 export const GridTopDiv = styled.div`
@@ -18,8 +22,13 @@ export const GridTopDiv = styled.div`
     align-items: center;
     justify-content: center;
     
-    @media(max-width: 800px) {
+    @media(max-width: 700px) {
         grid-template-columns: 100%;
+    }
+    
+    @media(min-width: 701px) and (max-width: 1050px) {
+        display: flex;
+        flex-wrap: wrap;
     }
 `;
 export const ItemCircleDiv = styled.div`
@@ -28,8 +37,9 @@ export const ItemCircleDiv = styled.div`
     padding: 20px 0;
     height: auto;
            
-    @media(max-width: 800px) {
+    @media(max-width: 1050px) {
         justify-content: center;
+        width: 50%;
     }
 `;
 
@@ -39,12 +49,18 @@ export const GridDiv = styled.div`
     grid-template-columns: 25% 25% 25% 25%;
     height: 270px;
     margin-top: 200px;
-    
-     
-    @media(max-width: 800px) {
+       
+    @media(max-width: 700px) {
         grid-template-columns: 100%;
         height: auto;
         margin-top: 150px;
+    } 
+    
+    @media(min-width: 701px) and (max-width: 1050px) {
+        grid-template-columns: 50% 50%;
+        height: auto;
+        margin-top: 150px;
+        width: 100%;
     }
 `;
 export const BlockDiv = styled.div`
@@ -70,7 +86,7 @@ export const BlockDiv = styled.div`
     }
     
     @keyframes fade {
-        from{opacity: 0; transform: translateY(-40%);}
+        from{opacity: 0;}
         to{opacity:1}
     }
 `;

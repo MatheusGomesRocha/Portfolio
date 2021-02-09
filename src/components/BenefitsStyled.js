@@ -23,10 +23,15 @@ export const GridDiv = styled.div`
     grid-row-gap: 20px;
     padding: 40px 120px;
     
-    @media(max-width: 800px) {
+    @media(max-width: 700px) {
         grid-template-columns: repeat(5, 1fr);
         padding: 0 10px;
         margin-top: -250px;
+    }
+    
+    @media(min-width: 701px) and (max-width: 950px) {
+        margin-top: -200px;
+        padding: 30px 50px;
     }
 `;
 export const ItemDiv = styled.div`
@@ -42,11 +47,11 @@ export const ItemDiv = styled.div`
     @media(min-width: 801px) {
         display: ${props => props.display};
         padding: 10px 20px;
-        animation: fadeTop 1s;
+        animation: fadeTop 500ms;
     }
     
     @keyframes fadeTop {
-        from{opacity: 0; transform: translateY(40%)}
+        from{opacity: 0;}
         to {opacity: 1;}
     }
 `;

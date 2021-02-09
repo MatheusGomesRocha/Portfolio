@@ -4,23 +4,17 @@
     <list default="true" id="cd8618c2-40d8-4a00-bbc3-a9d29c113ef8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppStyled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppStyled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AboutMeComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutMeComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AboutMeStyled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutMeStyled.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Benefits.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Benefits.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BenefitsComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BenefitsComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/BenefitsStyled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BenefitsStyled.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ContactComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ContactStyled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactStyled.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FooterComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FooterComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/FooterStyled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FooterStyled.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MoreInfoStyled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoreInfoStyled.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/WorksComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WorksComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/WorksStyled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WorksStyled.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/header_img.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/header_img.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +96,9 @@
       <workItem from="1612708231057" duration="2934000" />
       <workItem from="1612720801991" duration="1347000" />
       <workItem from="1612724711771" duration="4267000" />
-      <workItem from="1612795487947" duration="9339000" />
+      <workItem from="1612795487947" duration="9443000" />
+      <workItem from="1612884738219" duration="2082000" />
+      <workItem from="1612892510754" duration="2489000" />
     </task>
     <servers />
   </component>
@@ -151,13 +147,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/ContactStyled.js</url>
-          <line>79</line>
+          <line>84</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/ContactStyled.js</url>
-          <line>68</line>
-          <properties lambdaOrdinal="-1" />
+          <line>73</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>

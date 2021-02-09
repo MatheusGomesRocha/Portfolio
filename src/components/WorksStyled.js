@@ -19,11 +19,16 @@ export const GridDiv = styled.div`
     justify-content: center;
     width: 100%;
     
-    @media(max-width: 800px) {
+    @media(max-width: 700px) {
         grid-template-columns: auto;
         height: auto;
         width: 90%;
         margin-top: 100px;
+    }
+    
+    @media(min-width: 701px) and (max-width: 1050px) {
+        grid-template-columns: auto;
+        width: 90%;
     }
 `;
 export const BlockDiv = styled.div`
@@ -35,18 +40,28 @@ export const BlockDiv = styled.div`
         cursor: pointer;
     }
     
-    @media(max-width: 800px) {
+    @media(max-width: 700px) {
         width: 100%;
         height: 200px;
+    } 
+    
+    @media(min-width: 701px) and (max-width: 1050px) {
+        width: 100%;
+        height: 400px;
     }
 `;
 export const ItemDiv = styled.img`
     height: 350px;
     border-radius: 10px;
     
-    @media(max-width: 800px) {
+    @media(max-width: 700px) {
         width: 100%;
         height: 200px;
+    } 
+    
+    @media(min-width: 701px) and (max-width: 1050px) {
+        width: 100%;
+        height: 400px;
     }
 `;
 export const ItemHiddenDiv = styled.div`
@@ -68,8 +83,11 @@ export const ItemHiddenDiv = styled.div`
         to {opacity: 1}
     }
     
-    @media(max-width: 800px) {
-        width: 100%;
+    @media(max-width: 700px) {
         height: 200px;
+    } 
+    
+    @media(min-width: 701px) and (max-width: 1050px) {
+        height: 400px;
     }
 `;

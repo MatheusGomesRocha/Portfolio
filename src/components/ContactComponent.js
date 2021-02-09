@@ -17,7 +17,6 @@ import {
     InputBig,
     IconDiv,
     IconBall,
-    Icon,
 } from "./ContactStyled";
 import {useMediaQuery} from "react-responsive";
 
@@ -25,7 +24,7 @@ export default (props) => {
     const [secondaryColor, setSecondaryColor] = useState('#999');
 
     const isMobile = useMediaQuery({                                     // 18 - Da uma largura para mobile devices
-        query: '(max-width: 800px)'
+        query: '(max-width: 1050px)'
     });
 
     const DefaultBtn = withStyles(() => ({

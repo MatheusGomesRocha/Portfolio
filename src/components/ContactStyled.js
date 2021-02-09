@@ -7,7 +7,7 @@ export const MainDiv = styled.div`
     border-bottom: 1px solid #999;
     height: 700px;
     
-    @media(max-width: 800px) {
+    @media(max-width: 1050px) {
         grid-template-columns: 100%;
         height: auto;
     }
@@ -21,16 +21,16 @@ export const LeftDiv = styled.div`
     background-color: ${props => props.background};
     transition: 500ms;
     
-    @media(max-width: 800px) {
+    @media(max-width: 1050px) {
         padding: 50px 0; 
     }
     
-    @media(min-width: 801px) {
+    @media(min-width: 1051px) {
         animation: fadeLeft 0.5s;
     }
     
     @keyframes fadeLeft {
-        from {opacity: 0; transform: translateX(-40%)};
+        from {opacity: 0;};
         to {opacity: 1;};
     }
     
@@ -42,19 +42,24 @@ export const RightDiv = styled.div`
     transition: 500ms;
 
     @keyframes fadeRight {
-        from {opacity: 0; transform: translateX(40%)}
+        from {opacity: 0;}
         to {opacity: 1;}
     }
     
     @media(max-width: 800px) {
-        padding: 20px 20px;
+        padding: 20px;
         display: flex;
     }
     
-    @media(min-width: 801px) {
+    @media(min-width: 801px) and (max-width: 1050px) {
+        display: flex;
+        padding: 20px 100px;
+    }
+    
+    @media(min-width: 1051px) {
         display: ${props => props.display};
         animation: fadeRight 0.5s;
-    }
+    } 
 `;
 export const RightCenterDiv = styled.div`
     display: grid;
@@ -65,7 +70,7 @@ export const RightCenterDiv = styled.div`
     padding: 50px 10px;
     height: 400px;
     
-    @media(max-width: 800px) {
+    @media(max-width: 1050px) {
         height: auto;
         padding: 20px 0;
         margin-top: 50px;
@@ -87,6 +92,10 @@ export const Input = styled.input`
     :focus {
         outline: 0;
     }
+    
+    @media(min-width: 801px) and (max-width: 1050px) {
+        height: 60px;
+    }
 `;
 export const InputBig = styled.textarea`
     border: 1px solid #999;
@@ -107,6 +116,11 @@ export const InputBig = styled.textarea`
     
     @media(max-width: 800px) {
         margin-top: -70px;
+    }
+    
+    @media(min-width: 801px) and (max-width: 1050px) {
+        margin-top: -125px;
+        height: 200px;
     }
 `;
 

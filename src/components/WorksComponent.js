@@ -19,7 +19,7 @@ export default (props) => {
     const [hoverWork2, setHoverWork2] = useState(false);
 
     const isMobile = useMediaQuery({                                     // 18 - Da uma largura para mobile devices
-        query: '(max-width: 800px)'
+        query: '(max-width: 700px)'
     });
 
     const DefaultBtn = withStyles(() => ({

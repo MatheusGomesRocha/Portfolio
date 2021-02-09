@@ -19,8 +19,7 @@ export const DarkModeDiv = styled.div`
     height: 200px;
     border-radius: 10px;
     padding: 0 10px;
-    border: 1px solid;
-
+    
     @keyframes grow {
         from {width: 0; height: 0;}
         to {width: 200px; height: 200px;}
@@ -105,9 +104,14 @@ export const HeaderBottom = styled.div`
     justify-content: space-between;
     padding: 0 80px;
     
-    @media(max-width: 800px) {
+    @media(max-width: 700px) {
         flex-direction: column;
         padding: 0 40px;
+    }
+    
+    @media(min-width: 701px) and (max-width: 1050px) {
+        flex-direction: column;
+        padding: 40px;
     }
 `;
 export const HeaderLeft = styled.div`
@@ -115,11 +119,20 @@ export const HeaderLeft = styled.div`
     height: 250px;
     padding: 10px 0;
     
-    @media(max-width: 800px) {
+    @media(max-width: 700px) {
         width: 100%;
         height: 300px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+    
+    @media(min-width: 701px) and (max-width: 1050px) {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
     }
 `;

@@ -63,8 +63,13 @@ export default () => {
     const [darkModeDiv, setDarkModeDiv] = useState(false);                  // Mostra a div com a opção de escolher o modo Dark ou Light
 
     const isMobile = useMediaQuery({                                     // 18 - Da uma largura para mobile devices
-        query: '(max-width: 800px)'
+        query: '(max-width: 700px)'
     });
+
+    const isIpad = useMediaQuery({                                     // 18 - Da uma largura para mobile devices
+        query: '(max-width: 1050px)'
+    });
+
 
     const DefaultBtn = withStyles(() => ({          // Botão padrão "VAMOS COMEÇAR"
         root: {
@@ -274,10 +279,10 @@ export default () => {
                                 portfólio</DefaultText>
                         </Typist>
 
-                        <DefaultBtn> Vamos Começar </DefaultBtn>
+                        <DefaultBtn href={"#about"}> Vamos Começar </DefaultBtn>
                     </HeaderLeft>
 
-                    <Header_img mobile={isMobile} fillTop={darkMode ? '#3C3A52' : '#f2f2f2'}
+                    <Header_img mobile={isIpad} fillTop={darkMode ? '#3C3A52' : '#f2f2f2'}
                                 fillAngle={darkMode ? '#fff' : '#2f2e41'}
                                 fillBig={darkMode ? '#2f2e41' : '#fff'}/>
                 </HeaderBottom>
