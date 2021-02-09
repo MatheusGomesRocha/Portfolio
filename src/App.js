@@ -67,7 +67,11 @@ export default () => {
     });
 
     const isIpad = useMediaQuery({                                     // 18 - Da uma largura para mobile devices
-        query: '(max-width: 1050px)'
+        query: '(max-width: 1000px)'
+    });
+
+    const isMdDevice = useMediaQuery({                                     // 18 - Da uma largura para mobile devices
+        query: '(max-width: 1150px)'
     });
 
 
@@ -291,7 +295,7 @@ export default () => {
             </Header>
 
             {/*Wave abaixo do Header*/}
-            {isMobile ?
+            {isMdDevice ?
                     null
                 :
                 <div className="custom-shape-divider-bottom-1612379057">

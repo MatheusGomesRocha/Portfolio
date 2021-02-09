@@ -13,7 +13,7 @@ export const MainDiv = styled.div`
 `;
 export const GridDiv = styled.div`
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 45% 45%;
     grid-gap: 50px;
     margin-top: 100px;
     justify-content: center;
@@ -35,6 +35,7 @@ export const BlockDiv = styled.div`
     height: 350px;
     border-radius: 10px;
     position: relative;
+    width: 100%;
     
     :hover {
         cursor: pointer;
@@ -52,15 +53,14 @@ export const BlockDiv = styled.div`
 `;
 export const ItemDiv = styled.img`
     height: 350px;
+    width: 100%;
     border-radius: 10px;
     
     @media(max-width: 700px) {
-        width: 100%;
         height: 200px;
     } 
     
     @media(min-width: 701px) and (max-width: 1050px) {
-        width: 100%;
         height: 400px;
     }
 `;

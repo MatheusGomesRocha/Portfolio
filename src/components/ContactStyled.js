@@ -23,6 +23,7 @@ export const LeftDiv = styled.div`
     
     @media(max-width: 1050px) {
         padding: 50px 0; 
+        display: flex;
     }
     
     @media(min-width: 1051px) {

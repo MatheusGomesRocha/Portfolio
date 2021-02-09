@@ -50,9 +50,9 @@ export const Header = styled.div`
     background: linear-gradient(90deg, #ff9966 0%, #ff5e62 100%);  
     height: 80vh;  
     
-    @media(max-width: 800px) {
+    @media(max-width: 1050px) {
         height: auto;
-        padding-bottom: 0;
+        padding: 20px 0;
         width: 100%;
     }
 `;
@@ -68,15 +68,15 @@ export const HeaderTop = styled.div`
     transition: 500ms;
     z-index: 999;
     
-    @media(max-width: 800px) {
+    @media(max-width: 1050px) {
         display: none;
     }
 `;
 export const HeaderTopHidden = styled.div`
     display: ${props=>props.display};
-    height: 100px;
+    height: 75px;
     
-    @media(max-width: 800px) {
+    @media(max-width: 1050px) {
         display: none;
     }
 `;
@@ -111,7 +111,7 @@ export const HeaderBottom = styled.div`
     
     @media(min-width: 701px) and (max-width: 1050px) {
         flex-direction: column;
-        padding: 40px;
+        padding: 20px;
     }
 `;
 export const HeaderLeft = styled.div`
@@ -125,9 +125,10 @@ export const HeaderLeft = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-bottom: 50px;
     }
     
-    @media(min-width: 701px) and (max-width: 1050px) {
+    @media(min-width: 701px) and (max-width: 950px) {
         width: 90%;
         display: flex;
         flex-direction: column;
@@ -135,4 +136,14 @@ export const HeaderLeft = styled.div`
         justify-content: center;
         margin-bottom: 50px;
     }
+    
+    @media(min-width: 951px) and (max-width: 1150px) {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    
 `;

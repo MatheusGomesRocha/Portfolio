@@ -6,10 +6,10 @@ export const MainDiv = styled.div`
     padding-top: 50px;
     background-color: ${props => props.background};
     transition: 500ms;
-    
+    border-top: 1px solid #999;
+
     @media(max-width: 700px) {
         padding: 50px 0;
-        border-top: 1px solid #999;
     }
     
     @media(min-width: 701px) and (max-width: 1050px) {
@@ -37,7 +37,12 @@ export const ItemCircleDiv = styled.div`
     padding: 20px 0;
     height: auto;
            
-    @media(max-width: 1050px) {
+    @media(max-width: 700px) {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    @media(min-width: 701px) and (max-width: 1050px) {
         justify-content: center;
         width: 50%;
     }
@@ -75,16 +80,13 @@ export const BlockDiv = styled.div`
     border-right: 1px solid #999;
     border-top: 1px solid #999;
     border-bottom: 1px solid #999;
-    
-    @media(max-width: 800px) {
+    animation: fade 1s;
+    display: ${props => props.display};
+
+    @media(max-width: 1050px) {
         display: flex;
     }
-    
-    @media(min-width: 801px) {
-        animation: fade 1s;
-        display: ${props => props.display};
-    }
-    
+  
     @keyframes fade {
         from{opacity: 0;}
         to{opacity:1}

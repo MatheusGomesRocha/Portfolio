@@ -40,11 +40,11 @@ export const ItemDiv = styled.div`
     flex-direction: column;
     padding: 20px;
 
-    @media(max-width: 800px) {
+    @media(max-width: 1050px) {
         display: flex;
     }
     
-    @media(min-width: 801px) {
+    @media(min-width: 1051px) {
         display: ${props => props.display};
         padding: 10px 20px;
         animation: fadeTop 500ms;

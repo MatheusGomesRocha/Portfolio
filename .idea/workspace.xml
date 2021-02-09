@@ -6,15 +6,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppStyled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppStyled.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AboutMeComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutMeComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AboutMeStyled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutMeStyled.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/BenefitsStyled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BenefitsStyled.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ContactComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ContactStyled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactStyled.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FooterStyled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FooterStyled.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MoreInfoStyled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoreInfoStyled.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WorksComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WorksComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/WorksStyled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WorksStyled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/header_img.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/header_img.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +43,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/svg" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -57,9 +53,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mathe\Documents\portfolio\src" />
       <recent name="C:\Users\mathe\Documents\portfolio\src\svg" />
       <recent name="C:\Users\mathe\Documents\portfolio\src\img" />
-      <recent name="C:\Users\mathe\Documents\portfolio\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\mathe\Documents\portfolio\src\svg" />
@@ -98,7 +94,7 @@
       <workItem from="1612724711771" duration="4267000" />
       <workItem from="1612795487947" duration="9443000" />
       <workItem from="1612884738219" duration="2082000" />
-      <workItem from="1612892510754" duration="2489000" />
+      <workItem from="1612892510754" duration="4622000" />
     </task>
     <servers />
   </component>
@@ -147,12 +143,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/ContactStyled.js</url>
-          <line>84</line>
+          <line>85</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/ContactStyled.js</url>
-          <line>73</line>
+          <line>74</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
