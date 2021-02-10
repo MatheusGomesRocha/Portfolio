@@ -51,7 +51,7 @@ export default (props) => {
 
     return (
         <MainDiv>
-            <TopDiv background={props.darkMode ? '#2f2e41' : '#fff'}>
+            <TopDiv background={props.darkMode ? '#3C3A52' : '#f9f9f9'}>
                 <DefaultText width={"85%"} mTop={"30px"} color={props.darkMode ? '#fff' : '#2f2e41'} align={"center"} bolder={"bold"} font={"25px"}>
                     Meu nome é Matheus, e sou um desenvolvedor Full-Stack em formação
                 </DefaultText>

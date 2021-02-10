@@ -19,7 +19,7 @@ export default (props) => {
         <MainDiv background={props.darkMode ? '#2f2e41' : '#fff'}>
             <DefaultText align={"center"} color={props.darkMode ? '#fff' : '#2f2e41'} font={"40px"} bolder={"bold"}>Benefícios de trabalhar comigo</DefaultText>
             <GridDiv>
-                <ItemDiv display={props.display ? 'flex' : 'none'} className={"item1"}>
+                <ItemDiv background={props.darkMode ? '#3C3A52' : '#f5f5f5'} display={props.display ? 'flex' : 'none'} className={"item1"}>
                     <DefaultText mTop={"0"} font={"25px"} color={props.darkMode ? '#fff' : '#2f2e41'} bolder={"bold"}>O básico</DefaultText>
                     <RowDiv>
                         <SvgDiv background={props.darkMode ? '#fff' : '#2f2e41'}>
@@ -52,14 +52,14 @@ export default (props) => {
                     </RowDiv>
                 </ItemDiv>
 
-                <ItemDiv display={props.display2 ? 'flex' : 'none'} className={"item2"}>
+                <ItemDiv background={props.darkMode ? '#3C3A52' : '#f5f5f5'} display={props.display2 ? 'flex' : 'none'} className={"item2"}>
                     <DefaultText font={"25px"} color={props.darkMode ? '#fff' : '#2f2e41'} bolder={"bold"} mTop={"0"}>Fluxo rápido de
                         trabalho</DefaultText>
                     <DefaultText font={"25px"} color={"#999"} bolder={"bold"} mTop={"0"}>Rápido como um
                         raio</DefaultText>
                 </ItemDiv>
 
-                <ItemDiv display={props.display3 ? 'flex' : 'none'} className={"item3"}>
+                <ItemDiv background={props.darkMode ? '#3C3A52' : '#f5f5f5'} display={props.display3 ? 'flex' : 'none'} className={"item3"}>
                     <DefaultText font={"25px"} color={props.darkMode ? '#fff' : '#2f2e41'} bolder={"bold"} mTop={"0"}>Desenvolvimento</DefaultText>
                     <DefaultText font={"25px"} color={"#999"} bolder={"bold"} mTop={"0"}>Tudo por uma mão</DefaultText>
                     <DefaultText color={props.darkMode ? '#fff' : '#2f2e41'} width={"80%"} font={"22px"}>
@@ -69,7 +69,7 @@ export default (props) => {
                     </DefaultText>
                 </ItemDiv>
 
-                <ItemDiv display={props.display4 ? 'flex' : 'none'} className={"item4"}>
+                <ItemDiv background={props.darkMode ? '#3C3A52' : '#f5f5f5'} display={props.display4 ? 'flex' : 'none'} className={"item4"}>
                     <DefaultText font={"25px"} color={props.darkMode ? '#fff' : '#2f2e41'} bolder={"bold"} mTop={"0"}>Relatório de
                         atividades</DefaultText>
                     <DefaultText font={"25px"} color={"#999"} bolder={"bold"} mTop={"0"}>Todo o suporte

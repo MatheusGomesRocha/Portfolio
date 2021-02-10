@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 const defaultBackgroundColor = '#845EC2';
 
-export const Container = styled.div``;
+export const Container = styled.div`
+    background-color: #fff;
+`;
 
 export const DarkModeDiv = styled.div`
     display: ${props=>props.display};
@@ -55,6 +57,11 @@ export const Header = styled.div`
         padding: 20px 0;
         width: 100%;
     }
+    
+    @media(min-width: 1800px) {
+       height: 100vh;
+       padding-bottom: 0;
+    }
 `;
 export const HeaderTop = styled.div`
     display: flex;
@@ -67,9 +74,14 @@ export const HeaderTop = styled.div`
     top: 0;
     transition: 500ms;
     z-index: 999;
+    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
     
     @media(max-width: 1050px) {
         display: none;
+    }
+    
+    @media(min-width: 1800px) {
+        justify-content: space-around;
     }
 `;
 export const HeaderTopHidden = styled.div`
@@ -112,6 +124,11 @@ export const HeaderBottom = styled.div`
     @media(min-width: 701px) and (max-width: 1050px) {
         flex-direction: column;
         padding: 20px;
+    }
+    
+    @media(min-width: 1800px) {
+       justify-content: space-around;
+       padding: 30px 270px;
     }
 `;
 export const HeaderLeft = styled.div`

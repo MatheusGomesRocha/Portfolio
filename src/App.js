@@ -36,8 +36,8 @@ import ContactComponent from "./components/ContactComponent";
 import FooterComponent from "./components/FooterComponent";
 
 export default () => {
-    const [backgroundColor, setBackgroundColor] = useState('#2f2e41');      // Background para Dark Mode
-    const [fontColor, setFontColor] = useState('#fff');                     // Color para Dark Mode
+    const [backgroundColor, setBackgroundColor] = useState('#fff');      // Background para Dark Mode
+    const [fontColor, setFontColor] = useState('#2f2e41');                     // Color para Dark Mode
 
     const [fixedHeader, setFixedHeader] = useState(false);                  // Para mostrar o Header fixado
 
@@ -99,7 +99,7 @@ export default () => {
 
     const DarkModeBtn = withStyles(() => ({         // Botão fixado no bottom right com o "..."
         root: {
-            backgroundColor: darkMode ? '#fff' : '#2f2e41',
+            backgroundColor: darkMode ? '#000' : '#ddd',
             padding: 20,
             fontSize: 16,
             height: 50,
@@ -199,15 +199,15 @@ export default () => {
 
     const handleDarkMode = () => {      // Seta o site como DarkMode
         setDarkMode(true);
-        setBackgroundColor('#fff');
-        setFontColor('#2f2e41');
+        setBackgroundColor('#2f2e41');
+        setFontColor('#fff');
         setLightMode(false);
     }
 
     const handleLightMode = () => {     // Seta o site como LightMode
         setLightMode(true);
-        setBackgroundColor('#2f2e41');
-        setFontColor('#fff');
+        setBackgroundColor('#fff');
+        setFontColor('#2f2e41');
         setDarkMode(false);
     }
 
@@ -216,24 +216,24 @@ export default () => {
             <Header id={"home"}>
                 {/*Botão para abrir div e escolher modo*/}
                 <DarkModeBtn onClick={() => setDarkModeDiv(!darkModeDiv)}>
-                    <Dots fill={darkMode ? '#2f2e41' : '#fff'}/>
+                    <Dots fill={darkMode ? '#ddd' : '#000'}/>
                 </DarkModeBtn>
 
                 {/*Div para escolher modo*/}
-                <DarkModeDiv background={darkMode ? '#fff' : '#2f2e41'} display={darkModeDiv ? 'flex' : 'none'}>
-                    <DefaultText mTop={"0"} color={darkMode ? '#2f2e41' : '#fff'} weight={"bold"} align={"center"}
+                <DarkModeDiv background={darkMode ? '#000' : '#ddd'} display={darkModeDiv ? 'flex' : 'none'}>
+                    <DefaultText mTop={"0"} color={darkMode ? '#fff' : '#2f2e41'} weight={"bold"} align={"center"}
                                  font={"22px"}>Modo</DefaultText>
-                    <DarkModeDivInside bdColor={darkMode ? '#2f2e41' : '#fff'} onClick={handleLightMode}
-                                       background={lightMode ? '#fff' : 'transparent'}>
-                        <Sun fill={"#2f2e41"}/>
-                        <DefaultText style={{marginLeft: 20}} font={"20px"} align={"center"} color={'#2f2e41'}
+                    <DarkModeDivInside bdColor={darkMode ? '#fff' : '#2f2e41'} onClick={handleLightMode}
+                                       background={lightMode ? '#2f2e41' : 'transparent'}>
+                        <Sun fill={"#fff"}/>
+                        <DefaultText style={{marginLeft: 20}} font={"20px"} align={"center"} color={'#fff'}
                                      mTop={"0"}>Light Mode</DefaultText>
                     </DarkModeDivInside>
 
                     <DarkModeDivInside bdColor={darkMode ? '#2f2e41' : '#fff'} onClick={handleDarkMode}
-                                       background={darkMode ? fontColor : 'transparent'}>
-                        <Moon fill={'#fff'}/>
-                        <DefaultText style={{marginLeft: 20}} font={"20px"} color={'#fff'} mTop={"0"}>Dark
+                                       background={darkMode ? '#2f2e41' : 'transparent'}>
+                        <Moon fill={lightMode ? '#2f2e41' : '#fff'}/>
+                        <DefaultText style={{marginLeft: 20}} font={"20px"} color={lightMode ? '#2f2e41' : '#fff'} mTop={"0"}>Dark
                             Mode</DefaultText>
                     </DarkModeDivInside>
                 </DarkModeDiv>
@@ -242,7 +242,7 @@ export default () => {
                 <HeaderTopHidden display={fixedHeader ? 'flex' : 'none'}></HeaderTopHidden>
 
                 {/* Header Top */}
-                <HeaderTop background={fixedHeader && backgroundColor || fixedHeader && darkMode && backgroundColor}
+                <HeaderTop background={fixedHeader && lightMode && '#fff' || fixedHeader && darkMode && '#2f2e41'}
                            position={fixedHeader && 'fixed'}>
 
                     <HeaderLink href="#home">Home</HeaderLink>

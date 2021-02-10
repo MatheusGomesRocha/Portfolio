@@ -6,11 +6,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppStyled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppStyled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AboutMeComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutMeComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AboutMeStyled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutMeStyled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BenefitsComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BenefitsComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/BenefitsStyled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BenefitsStyled.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ContactStyled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactStyled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CircleProgressBarBase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CircleProgressBarBase.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MoreInfoStyled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoreInfoStyled.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/WorksStyled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WorksStyled.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/header_img.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/header_img.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +96,8 @@
       <workItem from="1612724711771" duration="4267000" />
       <workItem from="1612795487947" duration="9443000" />
       <workItem from="1612884738219" duration="2082000" />
-      <workItem from="1612892510754" duration="4622000" />
+      <workItem from="1612892510754" duration="4744000" />
+      <workItem from="1612954313051" duration="3516000" />
     </task>
     <servers />
   </component>
@@ -123,7 +126,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/AboutMeStyled.js</url>
-          <line>75</line>
+          <line>82</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">

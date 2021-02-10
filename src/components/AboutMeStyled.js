@@ -16,7 +16,11 @@ export const TopDiv = styled.div`
     transition: 500ms;
     
     @media(max-width: 800px) {
-        margin-top: 30px;
+        padding-top: 30px;
+    }
+    
+    @media(min-width: 1800px) {
+        padding-top: 30px;
     }
 `;
 export const BlockDiv = styled.div`
@@ -31,6 +35,10 @@ export const BlockDiv = styled.div`
         flex-direction: column;
         align-items: center;
     } 
+    
+    @media(min-width: 1800px) {
+        margin-top: -250px;
+    }
 `;
 export const ItemDiv = styled.div`
     display: flex;
@@ -40,7 +48,6 @@ export const ItemDiv = styled.div`
     background-color: ${props => props.background};
     height: 600px;
     width: 25%;
-    
     transition: 500ms;
     
     @media(max-width: 800px) {
@@ -50,7 +57,7 @@ export const ItemDiv = styled.div`
         border: 1px solid #999;
     } 
     
-    @media(min-width: 801px) and (max-width: 1800px) {
+    @media(min-width: 801px) {
         border-right: 1px solid #999;
         border-left: ${props => props.bLeft};
         border-top: 1px solid #999;

@@ -30,6 +30,11 @@ export const GridDiv = styled.div`
         grid-template-columns: auto;
         width: 90%;
     }
+    
+    @media(min-width: 1800px) {
+        grid-template-columns: 45% 45%;
+        width: 80%;
+    }
 `;
 export const BlockDiv = styled.div`
     height: 350px;
@@ -42,12 +47,10 @@ export const BlockDiv = styled.div`
     }
     
     @media(max-width: 700px) {
-        width: 100%;
         height: 200px;
     } 
     
     @media(min-width: 701px) and (max-width: 1050px) {
-        width: 100%;
         height: 400px;
     }
 `;

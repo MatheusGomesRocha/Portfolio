@@ -486,7 +486,6 @@ export const CircleProgressBarBase5 = ({
                     >
                         <li>
                             <span className="shape-circle" />
-                            <span>{legendText}</span>
                         </li>
                     </ul>
                 </figcaption>

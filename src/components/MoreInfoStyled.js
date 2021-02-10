@@ -10,6 +10,7 @@ export const MainDiv = styled.div`
 
     @media(max-width: 700px) {
         padding: 50px 0;
+        align-items: center;
     }
     
     @media(min-width: 701px) and (max-width: 1050px) {
@@ -36,7 +37,7 @@ export const ItemCircleDiv = styled.div`
     flex-direction: column;
     padding: 20px 0;
     height: auto;
-           
+    
     @media(max-width: 700px) {
         justify-content: center;
         width: 100%;
@@ -46,6 +47,12 @@ export const ItemCircleDiv = styled.div`
         justify-content: center;
         width: 50%;
     }
+    
+    @media(min-width: 1800px) {
+        padding: 20px 100px;
+        height: 200px;
+    }
+    
 `;
 
 
@@ -59,6 +66,7 @@ export const GridDiv = styled.div`
         grid-template-columns: 100%;
         height: auto;
         margin-top: 150px;
+        width: 100%;
     } 
     
     @media(min-width: 701px) and (max-width: 1050px) {

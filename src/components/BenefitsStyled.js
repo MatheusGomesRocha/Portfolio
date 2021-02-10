@@ -35,11 +35,11 @@ export const GridDiv = styled.div`
     }
 `;
 export const ItemDiv = styled.div`
-    border: 1px solid #999;
     border-radius: 10px;
     flex-direction: column;
     padding: 20px;
-
+    background-color: ${props=>props.background};
+    
     @media(max-width: 1050px) {
         display: flex;
     }
