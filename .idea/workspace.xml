@@ -5,14 +5,25 @@
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppStyled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppStyled.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AboutMeComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutMeComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AboutMeStyled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutMeStyled.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BenefitsComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BenefitsComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BenefitsStyled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BenefitsStyled.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CircleProgressBarBase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CircleProgressBarBase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MoreInfoStyled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MoreInfoStyled.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WorksStyled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WorksStyled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppStyled.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AboutMeComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AboutMeStyled.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Benefits.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BenefitsComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BenefitsStyled.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CircleProgressBar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CircleProgressBarBase.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contact.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContactComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContactStyled.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DefaultText.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FooterComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FooterStyled.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MoreInfoComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MoreInfoStyled.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WorksComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WorksStyled.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/header_img.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/header.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +56,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -97,7 +108,9 @@
       <workItem from="1612795487947" duration="9443000" />
       <workItem from="1612884738219" duration="2082000" />
       <workItem from="1612892510754" duration="4744000" />
-      <workItem from="1612954313051" duration="3516000" />
+      <workItem from="1612954313051" duration="3635000" />
+      <workItem from="1612965991982" duration="86000" />
+      <workItem from="1617656931729" duration="666000" />
     </task>
     <servers />
   </component>
@@ -115,46 +128,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/AppStyled.js</url>
-          <line>4</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/AboutMeStyled.js</url>
-          <line>82</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/CircleProgressBarBase.js</url>
-          <line>265</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/CircleProgressBarBase.js</url>
-          <line>346</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/App.js</url>
-          <line>6</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/ContactStyled.js</url>
-          <line>85</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/ContactStyled.js</url>
-          <line>74</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
