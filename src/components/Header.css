@@ -44,6 +44,32 @@
 /** **/
 
 
+/** HeaderBottom **/
+.header .headerBottom {
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.header .headerBottom .side {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+.header .headerBottom .side .title {
+    color: #fff;
+    font-size: 40px;
+}
+.header .headerBottom .side .text {
+    font-size: 35px;
+    color: #888;
+    line-height: 1.3;
+}
+
+
+
 
 /** HOVERS **/
 .header .headerTop .side .linkDiv:hover .linkBorderBottom {     /** Aplicada na div que imita a borderBottom */

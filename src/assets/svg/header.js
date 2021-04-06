@@ -10,27 +10,27 @@ export default (props) => {
                 </linearGradient>
             </defs>
             <title>coding</title>
-            <rect x="763.63" y="283" width="52" height="27" fill="#2f2e41" opacity="0.2"/>
-            <rect x="767.63" y="316" width="52" height="27" fill="#2f2e41" opacity="0.2"/>
-            <rect x="724.63" y="87" width="52" height="27" fill="#2f2e41" opacity="0.2"/>
-            <rect x="761.63" y="118" width="52" height="27" fill="#2f2e41" opacity="0.2"/>
-            <rect x="661.63" y="89" width="52" height="27" fill="#2f2e41" opacity="0.2"/>
-            <rect x="828.63" y="149" width="52" height="27" fill="#2f2e41" opacity="0.2"/>
-            <rect x="765.63" y="151" width="52" height="27" fill="#2f2e41" opacity="0.2"/>
-            <rect x="698.63" y="120" width="52" height="27" fill="#2f2e41" opacity="0.2"/>
-            <rect x="825.63" y="357" width="52" height="27" fill="#2f2e41" opacity="0.2"/>
-            <rect x="762.63" y="359" width="52" height="27" fill="#2f2e41" opacity="0.2"/>
+            <rect x="763.63" y="283" width="52" height="27" fill="#888" opacity="0.2"/>
+            <rect x="767.63" y="316" width="52" height="27" fill="#888" opacity="0.2"/>
+            <rect x="724.63" y="87" width="52" height="27" fill="#888" opacity="0.2"/>
+            <rect x="761.63" y="118" width="52" height="27" fill="#888" opacity="0.2"/>
+            <rect x="661.63" y="89" width="52" height="27" fill="#888" opacity="0.2"/>
+            <rect x="828.63" y="149" width="52" height="27" fill="#888" opacity="0.2"/>
+            <rect x="765.63" y="151" width="52" height="27" fill="#888" opacity="0.2"/>
+            <rect x="698.63" y="120" width="52" height="27" fill="#888" opacity="0.2"/>
+            <rect x="825.63" y="357" width="52" height="27" fill="#888" opacity="0.2"/>
+            <rect x="762.63" y="359" width="52" height="27" fill="#888" opacity="0.2"/>
             <path
                 d="M280.17,332.5s73.29,73.29,31.92,182S383,804.14,383,804.14s-1.2-.18-3.43-.57C229.05,777,154.26,604.85,238,477,269.08,429.41,294.62,373.64,280.17,332.5Z"
-                transform="translate(-149.42 -56.5)" fill="#2f2e41"/>
+                transform="translate(-149.42 -56.5)" fill="#888"/>
             <path d="M280.17,332.5s41.37,89.84,0,163.12-7.09,279,102.84,308.52" transform="translate(-149.42 -56.5)" fill="none"
                   stroke="#535461" stroke-miterlimit="10" stroke-width="2"/>
             <path
                 d="M149.63,628.92s83.63-13.32,91.25,61.63S401.7,775.89,401.7,775.89s-1,.68-2.87,1.91c-126.49,83-247.4,52.89-229.17-57.36C176.43,679.45,175.87,638.28,149.63,628.92Z"
-                transform="translate(-149.42 -56.5)" fill="#2f2e41"/>
+                transform="translate(-149.42 -56.5)" fill="#888"/>
             <path
                 d="M149.63,628.92s83.63-13.32,91.25,61.63S401.7,775.89,401.7,775.89s-1,.68-2.87,1.91c-126.49,83-247.4,52.89-229.17-57.36C176.43,679.45,175.87,638.28,149.63,628.92Z"
-                transform="translate(-149.42 -56.5)" fill="#f5f5f5" opacity="0.2"/>
+                transform="translate(-149.42 -56.5)" fill="#888" opacity="0.2"/>
             <path d="M149.63,628.92s64.91,14.25,59.58,73.27S305.61,832,401.7,775.89" transform="translate(-149.42 -56.5)"
                   fill="none" stroke="#535461" stroke-miterlimit="10" stroke-width="2"/>
             <rect x="0.63" y="284" width="52" height="27" fill="#2f2e41" opacity="0.2"/>
@@ -92,31 +92,31 @@ export default (props) => {
                   opacity="0.1"/>
             <path
                 d="M338.82,553.3H644.29a25.37,25.37,0,0,1,25.37,25.37v0a0,0,0,0,1,0,0H313.46a0,0,0,0,1,0,0v0A25.37,25.37,0,0,1,338.82,553.3Z"
-                fill="#535461"/>
+                fill="#000"/>
             <path
                 d="M369.9,378.89H613.22a39,39,0,0,1,39,39V559.11a0,0,0,0,1,0,0H330.9a0,0,0,0,1,0,0V417.89A39,39,0,0,1,369.9,378.89Z"
-                fill="#535461"/>
+                fill="#333"/>
             <circle cx="491.29" cy="476.93" r="19.03" fill="#fff"/>
             <path d="M577.56,204.7s72.72-72.68,151.15-1.33" transform="translate(-149.42 -56.5)" fill="none" stroke="#000"
                   stroke-miterlimit="10" opacity="0.1"/>
             <rect x="590.36" y="143.57" width="7.3" height="41.39" fill="#6a5c99"/>
             <path
                 d="M580.62,170.35h0a25.16,25.16,0,0,1,25.16,25.16v1.62a25.16,25.16,0,0,1-25.16,25.16h0a0,0,0,0,1,0,0V170.35a0,0,0,0,1,0,0Z"
-                fill="#ffd037"/>
+                fill="#FEB633"/>
             <rect x="575.75" y="167.92" width="11.36" height="56.81" rx="5.68" ry="5.68" fill="#6a5c99"/>
             <rect x="558.44" y="200.88" width="7.3" height="41.39" transform="translate(974.76 386.65) rotate(-180)"
                   fill="#6a5c99"/>
             <path
                 d="M550.32,227.66h0a25.16,25.16,0,0,1,25.16,25.16v1.62a25.16,25.16,0,0,1-25.16,25.16h0a0,0,0,0,1,0,0V227.66A0,0,0,0,1,550.32,227.66Z"
-                transform="translate(976.38 450.76) rotate(180)" fill="#ffd037"/>
+                transform="translate(976.38 450.76) rotate(180)" fill="#FEB633"/>
             <rect x="568.99" y="225.23" width="11.36" height="56.81" rx="5.68" ry="5.68"
                   transform="translate(999.92 450.76) rotate(-180)" fill="#6a5c99"/>
             <path
                 d="M738.92,155.83c-9.89-20.56-31.43-45.42-77.86-47.41v-.06l-.56,0h0l-16.45.78v.08c-46.12,2.12-67.56,26.89-77.42,47.38A106.59,106.59,0,0,0,556.41,201l5.68-.14,5.68-.13A96.65,96.65,0,0,1,577,161.21c12.52-25.72,35.56-39.39,68.47-40.66h0l14.55-.81h0C692.95,121,716,134.69,728.51,160.4a96.65,96.65,0,0,1,9.25,39.54l5.68.13,5.68.14A106.59,106.59,0,0,0,738.92,155.83Z"
-                transform="translate(-149.42 -56.5)" fill="#ffd037"/>
-            <rect x="74.28" y="579" width="774.71" height="208" fill="#d6d6e3"/>
+                transform="translate(-149.42 -56.5)" fill="#FEB633"/>
+            <rect x="74.28" y="579" width="774.71" height="208" fill="#666"/>
             <rect x="74.28" y="593" width="774.71" height="27" opacity="0.1"/>
-            <rect x="22.31" y="576" width="878.63" height="27" fill="#d6d6e3"/>
+            <rect x="22.31" y="576" width="878.63" height="27" fill="#666"/>
         </svg>
     );
 }

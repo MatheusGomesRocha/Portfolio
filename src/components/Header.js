@@ -81,7 +81,7 @@ export default () => {
                     <DefaultBtnComponent title={"Hire Me"}/>
                 </div>
 
-                <div className={"side"}>
+                <div style={{marginRight: 100}}>
                     <HeaderSvg />
                 </div>
             </div>
