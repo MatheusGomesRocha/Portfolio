@@ -1,3 +1,30 @@
 .about {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: #303131;
+}
+.about .side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.about .side .title {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+}
+.about .side .lineBottom {
+    width: 40%;
+    height: 5px;
+    background-color: #e14b5a;
+}
+
+.about .side .textAbout {
+    color: #888;
+}
+.about .side .rowBtn {
+    display: flex;
 }

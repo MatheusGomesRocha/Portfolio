@@ -6,12 +6,12 @@ import DefaultBtnComponent from "../../sideComponent/DefaultBtn";
 export default () => {
     return(
         <div className={"about"}>
-            <div className={"side"}>
+            <div style={{marginRight: 100}} className={"side"}>
                 <span className={"title"}>About Me</span>
                 <div className={"lineBottom"}></div>
             </div>
 
-            <div className={"side"}>
+            <div style={{width: '40%'}} className={"side"}>
                 <span className={"textAbout"}>
                     Meu nome é Francisco Matheus Gomes Rocha, tenho 20 anos, moro em Fortaleza-CE estou no
                     5º semestre do curso de Análise e Desenvolvimento de Sistemas na UniFametro.
@@ -21,7 +21,7 @@ export default () => {
                 </span>
 
                 <span style={{marginTop: 20}} className={"textAbout"}>
-                    Hoje, 3 anos depois, sempre tento aprender algo novo e implementar em algum projeto, atualmente
+                    Hoje, 3 anos depois, sempre tento aprender algo novo e implementar em algum projetos, atualmente
                     sou Desenvolvedor Web Back-end e Front-end, e também Desenvolvedor Mobile. Não tenho nenhuma
                     experiência profissionalmente, mas já criei vários projetos apenas para desenvolvimento próprio
                     que podem ser encontrados no meu GitHub.
@@ -29,7 +29,9 @@ export default () => {
 
                 <div className={"rowBtn"}>
                     <DefaultBtnComponent title={"Download CV"} />
-                    <DefaultBtnComponent border={true} title={"Ver Trabalhos"} />
+                    <div style={{marginLeft: 15}}>
+                        <DefaultBtnComponent border={true} title={"Ver Trabalhos"} />
+                    </div>
                 </div>
             </div>
         </div>

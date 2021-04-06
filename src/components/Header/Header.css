@@ -12,6 +12,7 @@
     position: fixed;
     top: 0;
     background-color: #2B2C2C;
+    z-index: 999;
 }
 .header .headerTop .logo {      /** Span com texto (logo) apenas um M. */
     margin-left: 100px;

@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd8618c2-40d8-4a00-bbc3-a9d29c113ef8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/About/About.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/About/About.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/About.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/About.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sideComponent/DefaultBtn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sideComponent/DefaultBtn.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +97,8 @@
       <workItem from="1612954313051" duration="3635000" />
       <workItem from="1612965991982" duration="86000" />
       <workItem from="1617656931729" duration="1018000" />
-      <workItem from="1617711542640" duration="6567000" />
+      <workItem from="1617711542640" duration="7357000" />
+      <workItem from="1617729857413" duration="2439000" />
     </task>
     <servers />
   </component>
@@ -123,7 +123,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/Header/Header.js</url>
           <line>28</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

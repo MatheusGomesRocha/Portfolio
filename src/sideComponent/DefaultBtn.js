@@ -6,11 +6,11 @@ export default(props) => {
     const DefaultBtn = withStyles(() => ({
         root: {
             padding: 20,
-            height: 50,
+            height: 60,
             marginTop: 30,
             border: props.border ? '1px solid #e14b5a' : '1px solid transparent',
             borderRadius: 5,
-            width: 200,
+            width: 220,
             backgroundColor: props.border ? 'transparent' : '#e14b5a',
             color: '#fff',
             fontWeight: 'bold',
@@ -19,13 +19,13 @@ export default(props) => {
             justifyContent: 'center',
             textTransform: 'capitalize',
             fontFamily: 'Poppins',
-            fontSize: 18,
+            fontSize: 20,
             transition: '250ms',
 
             '&:hover': {
-                backgroundColor: 'transparent',
-                border: '1px solid #e14b5a',
-                color: '#e14b5a'
+                backgroundColor: props.border ? '#e14b5a' : 'transparent',
+                border: props.border ? '1px solid transparent' : '1px solid #e14b5a',
+                color: props.border === false && '#e14b5a'
             }
         },
     }))(Button);
