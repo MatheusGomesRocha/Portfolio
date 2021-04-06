@@ -2,11 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd8618c2-40d8-4a00-bbc3-a9d29c113ef8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/sideComponent/DefaultBtn.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/logo 2828.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/logo 2828.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/project1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/project1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/back.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/back.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/facebook.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/facebook.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/front.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/front.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/instagram.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/instagram.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/linkedin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/linkedin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/mobile.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/mobile.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/search.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +30,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -54,6 +65,7 @@
       <recent name="C:\Users\mathe\Documents\portfolio\src\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mathe\Documents\portfolio\src\assets" />
       <recent name="C:\Users\mathe\Documents\portfolio\src\svg" />
       <recent name="C:\Users\mathe\Documents\portfolio\src\components" />
     </key>
@@ -94,7 +106,7 @@
       <workItem from="1612954313051" duration="3635000" />
       <workItem from="1612965991982" duration="86000" />
       <workItem from="1617656931729" duration="1018000" />
-      <workItem from="1617711542640" duration="3427000" />
+      <workItem from="1617711542640" duration="4152000" />
     </task>
     <servers />
   </component>
@@ -112,5 +124,23 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Header.js</url>
+          <line>27</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Header.js</url>
+          <line>74</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

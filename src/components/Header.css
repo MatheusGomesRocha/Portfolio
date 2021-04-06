@@ -1,7 +1,8 @@
-.header {
+.header {       /** Div Father */
 }
 
-.header .headerTop {
+/** Header Top **/
+.header .headerTop {        /** Div Father */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,17 +13,17 @@
     top: 0;
     background-color: #2B2C2C;
 }
-.header .headerTop .logo {
+.header .headerTop .logo {      /** Span com texto (logo) apenas um M. */
     margin-left: 100px;
     color: #FEB633;
     font-size: 40px;
     font-weight: bold;
 }
-.header .headerTop .side {
+.header .headerTop .side {      /** Div para separar com a logo */
     margin-right: 100px;
     display: flex;
 }
-.header .headerTop .side .linkDiv {
+.header .headerTop .side .linkDiv {         /** Div para juntar o link com uma div que imita uma borderBottom para o link */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -30,26 +31,32 @@
     margin-left: 30px;
     cursor: pointer;
 }
-.header .headerTop .side .linkDiv .link {
+.header .headerTop .side .linkDiv .link {       /** Link */
     color: #fff;
     text-decoration: none;
     transition: 250ms;
 }
-.header .headerTop .side .linkDiv .linkBorderBottom {
+.header .headerTop .side .linkDiv .linkBorderBottom {       /** Div que imita uma borderBottom para o link */
     width: 0;
     height: 2px;
     background-color: #FEB633;
 }
+/** **/
 
 
-.header .headerTop .side .linkDiv:hover .linkBorderBottom {
-    animation: growBorderBottom 250ms forwards;
+
+/** HOVERS **/
+.header .headerTop .side .linkDiv:hover .linkBorderBottom {     /** Aplicada na div que imita a borderBottom */
+    animation: growBorderBottom 250ms forwards;     /** Forwards significa que vai completar a animação e continuar lá */
 }
-.header .headerTop .side .linkDiv:hover .link {
+.header .headerTop .side .linkDiv:hover .link {     /** Aplicada nos links do headerTop */
     color: #FEB633;
 }
+/** **/
 
 
-@keyframes growBorderBottom {
+/** ANIMATIONS */
+@keyframes growBorderBottom {       /** Aumenta o tamanho da div que imita a borderBottom, aplicada no hover do linkDiv */
     to{width: 30px}
 }
+/** **/
