@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from "react";
 import './Header.css';
 
-import DefaultBtnComponent from "../sideComponent/DefaultBtn";
-import HeaderSvg from '../assets/svg/header';
+import DefaultBtnComponent from "../../sideComponent/DefaultBtn";
+import HeaderSvg from '../../assets/svg/header';
 
 export default () => {
     const [fixedHeaderTop, setFixedHeaderTop] = useState(false);
