@@ -1,5 +1,4 @@
 .header {
-
 }
 
 .header .headerTop {
@@ -8,10 +7,49 @@
     justify-content: space-between;
     height: 90px;
     width: 100%;
-    border-bottom: 2px solid #2B2C2C;
     transition: 250ms;
     position: fixed;
     top: 0;
     background-color: #2B2C2C;
 }
+.header .headerTop .logo {
+    margin-left: 100px;
+    color: #FEB633;
+    font-size: 40px;
+    font-weight: bold;
+}
+.header .headerTop .side {
+    margin-right: 100px;
+    display: flex;
+}
+.header .headerTop .side .linkDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.header .headerTop .side .linkDiv .link {
+    color: #fff;
+    text-decoration: none;
+    transition: 250ms;
+}
+.header .headerTop .side .linkDiv .linkBorderBottom {
+    width: 0;
+    height: 2px;
+    background-color: #FEB633;
+}
 
+
+.header .headerTop .side .linkDiv:hover .linkBorderBottom {
+    animation: growBorderBottom 250ms forwards;
+}
+.header .headerTop .side .linkDiv:hover .link {
+    color: #FEB633;
+}
+
+
+@keyframes growBorderBottom {
+    to{width: 30px}
+}
