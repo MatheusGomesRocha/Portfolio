@@ -7,6 +7,7 @@ import HeaderSvg from '../assets/svg/header';
 export default () => {
     const [fixedHeaderTop, setFixedHeaderTop] = useState(false);
     const [link, setLink] = useState('home');
+    let defaultColor = '#e14b5a';
 
     const handleScroll = () => {        // Verifica o Scroll da pagina
         if (document.documentElement.scrollTop > 90) {       // Se for maior que 0, fixa o Header e está na sessão Home
@@ -33,42 +34,42 @@ export default () => {
 
                 <div className={"side"}>
                     <div onClick={() => setLink('home')} className={"linkDiv"}>
-                        <a className={"link"} href={"#home"} style={{color: link === 'home' && '#FEB633'}}>Home</a>
+                        <a className={"link"} href={"#home"} style={{color: link === 'home' && defaultColor}}>Home</a>
                         <div className={"linkBorderBottom"} style={{width: link === 'home' && '30px'}}></div>
                     </div>
 
                     <div onClick={() => setLink('about')} className={"linkDiv"}>
-                        <a className={"link"} href={"#about"} style={{color: link === 'about' && '#FEB633'}}>About
+                        <a className={"link"} href={"#about"} style={{color: link === 'about' && defaultColor}}>About
                             Me</a>
                         <div className={"linkBorderBottom"} style={{width: link === 'about' && '30px'}}></div>
                     </div>
 
                     <div onClick={() => setLink('services')} className={"linkDiv"}>
                         <a className={"link"} href={"#services"}
-                           style={{color: link === 'services' && '#FEB633'}}>Services</a>
+                           style={{color: link === 'services' && defaultColor}}>Services</a>
                         <div className={"linkBorderBottom"} style={{width: link === 'services' && '30px'}}></div>
                     </div>
 
                     <div onClick={() => setLink('skills')} className={"linkDiv"}>
                         <a className={"link"} href={"#skills"}
-                           style={{color: link === 'skills' && '#FEB633'}}>Skills</a>
+                           style={{color: link === 'skills' && defaultColor}}>Skills</a>
                         <div className={"linkBorderBottom"} style={{width: link === 'skills' && '30px'}}></div>
                     </div>
 
                     <div onClick={() => setLink('process')} className={"linkDiv"}>
                         <a className={"link"} href={"#process"}
-                           style={{color: link === 'process' && '#FEB633'}}>Process</a>
+                           style={{color: link === 'process' && defaultColor}}>Process</a>
                         <div className={"linkBorderBottom"} style={{width: link === 'process' && '30px'}}></div>
                     </div>
 
                     <div onClick={() => setLink('works')} className={"linkDiv"}>
-                        <a className={"link"} href={"#works"} style={{color: link === 'works' && '#FEB633'}}>Works</a>
+                        <a className={"link"} href={"#works"} style={{color: link === 'works' && defaultColor}}>Works</a>
                         <div className={"linkBorderBottom"} style={{width: link === 'works' && '30px'}}></div>
                     </div>
 
                     <div onClick={() => setLink('contact')} className={"linkDiv"}>
                         <a className={"link"} href={"#contact"}
-                           style={{color: link === 'contact' && '#FEB633'}}>Contact</a>
+                           style={{color: link === 'contact' && defaultColor}}>Contact</a>
                         <div className={"linkBorderBottom"} style={{width: link === 'contact' && '30px'}}></div>
                     </div>
                 </div>

@@ -8,10 +8,10 @@ export default(props) => {
             padding: 20,
             height: 50,
             marginTop: 30,
-            border: props.border ? '1px solid #FEB633' : '1px solid transparent',
+            border: props.border ? '1px solid #e14b5a' : '1px solid transparent',
             borderRadius: 5,
             width: 200,
-            backgroundColor: props.border ? 'transparent' : '#FEB633',
+            backgroundColor: props.border ? 'transparent' : '#e14b5a',
             color: '#fff',
             fontWeight: 'bold',
             display: 'flex',
@@ -21,10 +21,11 @@ export default(props) => {
             fontFamily: 'Poppins',
             fontSize: 18,
             transition: '250ms',
+
             '&:hover': {
                 backgroundColor: 'transparent',
-                border: '1px solid #FEB633',
-                color: '#FEB633'
+                border: '1px solid #e14b5a',
+                color: '#e14b5a'
             }
         },
     }))(Button);

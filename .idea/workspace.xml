@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd8618c2-40d8-4a00-bbc3-a9d29c113ef8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/sideComponent/Color.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/svg/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sideComponent/DefaultBtn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sideComponent/DefaultBtn.js" afterDir="false" />
@@ -96,7 +96,7 @@
       <workItem from="1612954313051" duration="3635000" />
       <workItem from="1612965991982" duration="86000" />
       <workItem from="1617656931729" duration="1018000" />
-      <workItem from="1617711542640" duration="5419000" />
+      <workItem from="1617711542640" duration="6081000" />
     </task>
     <servers />
   </component>
@@ -120,13 +120,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/Header.js</url>
-          <line>27</line>
+          <line>28</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/Header.js</url>
-          <line>74</line>
+          <line>75</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>

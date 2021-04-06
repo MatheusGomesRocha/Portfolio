@@ -15,7 +15,7 @@
 }
 .header .headerTop .logo {      /** Span com texto (logo) apenas um M. */
     margin-left: 100px;
-    color: #FEB633;
+    color: #e14b5a;
     font-size: 40px;
     font-weight: bold;
 }
@@ -39,7 +39,7 @@
 .header .headerTop .side .linkDiv .linkBorderBottom {       /** Div que imita uma borderBottom para o link */
     width: 0;
     height: 2px;
-    background-color: #FEB633;
+    background-color: #e14b5a;
 }
 /** **/
 
@@ -76,7 +76,7 @@
     animation: growBorderBottom 250ms forwards;     /** Forwards significa que vai completar a animação e continuar lá */
 }
 .header .headerTop .side .linkDiv:hover .link {     /** Aplicada nos links do headerTop */
-    color: #FEB633;
+    color: #e14b5a;
 }
 /** **/
 
