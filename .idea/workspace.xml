@@ -2,12 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd8618c2-40d8-4a00-bbc3-a9d29c113ef8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/img/img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/img2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/img3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/img4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/svg/coin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/svg/mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Services/Services.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Services/Services.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/About.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/About.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/svg/back.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/back.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/svg/front.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/svg/front.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/svg/mobile.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/About/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sideComponent/DefaultBtn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sideComponent/DefaultBtn.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +48,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/svg" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -50,6 +58,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mathe\Documents\portfolio\src\assets\svg" />
+      <recent name="C:\Users\mathe\Documents\portfolio\src\assets\img" />
       <recent name="C:\Users\mathe\Documents\portfolio\src" />
       <recent name="C:\Users\mathe\Documents\portfolio\src\svg" />
       <recent name="C:\Users\mathe\Documents\portfolio\src\img" />
@@ -98,7 +108,7 @@
       <workItem from="1612965991982" duration="86000" />
       <workItem from="1617656931729" duration="1018000" />
       <workItem from="1617711542640" duration="7357000" />
-      <workItem from="1617729857413" duration="2516000" />
+      <workItem from="1617729857413" duration="3798000" />
     </task>
     <servers />
   </component>

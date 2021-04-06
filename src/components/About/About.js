@@ -22,9 +22,8 @@ export default () => {
 
                 <span style={{marginTop: 20}} className={"textAbout"}>
                     Hoje, 3 anos depois, sempre tento aprender algo novo e implementar em algum projetos, atualmente
-                    sou Desenvolvedor Web Back-end e Front-end, e também Desenvolvedor Mobile. Não tenho nenhuma
-                    experiência profissionalmente, mas já criei vários projetos apenas para desenvolvimento próprio
-                    que podem ser encontrados no meu GitHub.
+                    sou Desenvolvedor Full-Stack. Não tenho nenhuma experiência profissionalmente, mas já criei
+                    vários projetos apenas para desenvolvimento próprio que podem ser encontrados no meu GitHub.
                 </span>
 
                 <div className={"rowBtn"}>
