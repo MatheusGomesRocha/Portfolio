@@ -2,28 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd8618c2-40d8-4a00-bbc3-a9d29c113ef8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppStyled.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AboutMeComponent.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AboutMeStyled.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Benefits.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BenefitsComponent.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BenefitsStyled.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CircleProgressBar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CircleProgressBarBase.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contact.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ContactComponent.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ContactStyled.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DefaultText.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FooterComponent.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FooterStyled.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MoreInfoComponent.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MoreInfoStyled.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WorksComponent.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WorksStyled.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/header_img.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/header.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -110,7 +94,8 @@
       <workItem from="1612892510754" duration="4744000" />
       <workItem from="1612954313051" duration="3635000" />
       <workItem from="1612965991982" duration="86000" />
-      <workItem from="1617656931729" duration="666000" />
+      <workItem from="1617656931729" duration="1018000" />
+      <workItem from="1617711542640" duration="1163000" />
     </task>
     <servers />
   </component>

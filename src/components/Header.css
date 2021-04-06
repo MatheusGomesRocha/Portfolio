@@ -1,0 +1,17 @@
+.header {
+
+}
+
+.header .headerTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    width: 100%;
+    border-bottom: 2px solid #2B2C2C;
+    transition: 250ms;
+    position: fixed;
+    top: 0;
+    background-color: #2B2C2C;
+}
+

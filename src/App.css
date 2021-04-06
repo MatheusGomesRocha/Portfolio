@@ -1,31 +1,3 @@
-html {
-    scroll-behavior: smooth;
-}
-
-.custom-shape-divider-bottom-1612379057 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-bottom-1612379057 svg {
-    position: relative;
-    display: block;
-    width: calc(146% + 1.3px);
-    height: 235px;
-}
-
-.custom-shape-divider-bottom-1612379057 .shape-fill {
-    transition: 500ms;
-}
-
-/** For tablet devices **/
-@media (min-width: 768px) and (max-width: 1023px) {
-    .custom-shape-divider-bottom-1612379057 svg {
-        width: calc(146% + 1.3px);
-        height: 209px;
-    }
+.app {
+    background-color: #2B2C2C;
 }
